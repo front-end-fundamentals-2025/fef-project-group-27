@@ -1,0 +1,30 @@
+/* ONLY NAVIGATION CSS */
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*gap: 1rem;*/
+  padding: 1rem;
+}
+
+nav > .logo {
+  font-size: 1.5rem;
+}
+
+nav > .menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav > .menu > a {
+  text-decoration: none;
+  color: white;
+}
+/*
+nav > .menu > a > i {
+    font-size:2rem ;
+}*/
