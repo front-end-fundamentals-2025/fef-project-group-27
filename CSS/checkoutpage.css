@@ -1,0 +1,154 @@
+/* ONLY CHECKOUT PAGE CSS */
+
+/* nav css */
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  position: relative; /* Added for centering the logo */
+}
+
+nav > .arrow-back {
+  display: flex;
+  align-items: center;
+}
+
+nav > .arrow-back > a {
+  color: white;
+}
+
+nav > .logo {
+  position: absolute; /* Position the logo absolutely */
+  left: 50%; /* Move the logo to the center */
+  transform: translateX(-50%); /* Adjust for exact centering */
+}
+
+nav > .logo > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* main css */
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-out {
+  margin-top: 3rem;
+}
+
+.check-out > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin-top: 5rem;
+}
+
+/* background */
+.order-content {
+  padding: 2rem;
+  height: fit-content;
+  width: fit-content;
+  background-color: #d4d8dd;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* first section */
+#order-information {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.order-checkup {
+  display: flex;
+}
+
+table {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+table > caption {
+  font-weight: bold;
+}
+
+tr {
+  display: flex;
+  padding-top: 5px;
+}
+
+tr > td > button {
+  padding: 5px;
+}
+
+.order-essentials {
+  margin-left: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+hr {
+  margin-top: 1rem;
+  border-top: 1px solid red;
+}
+
+/* second section */
+
+.discount-code,
+.gift-card,
+.delivery-fee,
+.total-amount {
+  padding-top: 15px;
+}
+
+/* select size */
+#size {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* discout code and gift card*/
+
+.form-group {
+  padding-top: 15px;
+}
+
+.input-group {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.button {
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+/* delivery fee */
+
+.delivery-fee {
+    display: flex;
+    justify-content: space-between;
+}

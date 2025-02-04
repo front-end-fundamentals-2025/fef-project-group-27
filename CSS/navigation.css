@@ -24,7 +24,13 @@ nav > .menu > a {
   text-decoration: none;
   color: white;
 }
-/*
+
 nav > .menu > a > i {
-    font-size:2rem ;
-}*/
+}
+
+.globe {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}

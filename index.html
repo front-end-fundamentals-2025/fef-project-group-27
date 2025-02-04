@@ -14,22 +14,56 @@
     />
   </head>
   <body>
-    <!-- Navigation -->
     <header>
       <nav>
-        <div class="logo">logo</div>
+        <div class="logo"><a href="index.html">logo</div>
         <div class="menu">
-          <a href="#">bla bla bla</a>
-          <a href="#">bla bla </a>
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="globe">
+            <i class="fa-solid fa-globe" style="padding-right: 5px"></i>en
+          </button>
+          <a href="#"><i class="fa-solid fa-user" ></i></a>
+          <a href="checkoutpage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button
+      id="openPopup"
+      style="
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      "
+    >
+      Open Popup
+    </button>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>Popup Title</h2>
+        <p>This popup is controlled with JavaScript.</p>
+        <button
+          id="closePopup"
+          style="
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+          "
+        >
+          Close
+        </button>
+      </div>
+    </div>
         </div>
       </nav>
     </header>
-    <!-- Main Content -->
-    <main></main>
-    <!-- Footer -->
+    <main>
+
+    </main>
     <footer>
       <p>© 2025 "Website Name or something". All Rights Reserved</p>
     </footer>
+
+    <script src="/JS/basketpopup.js"></script>
   </body>
 </html>
