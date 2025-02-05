@@ -65,36 +65,37 @@ h4 {
 }
 
 /* first section */
-#order-information {
+
+.image-content {
+  display: flex;
+}
+
+.image-content > .image-content-details > img {
+  width: 20%;
+  height: auto;
+}
+
+.image-content-details {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
+  max-height: fit-content;
 }
 
-.order-checkup {
-  display: flex;
-}
-
-table {
-  padding-left: 1rem;
+.content-details {
   display: flex;
   flex-direction: column;
 }
 
-table > caption {
-  font-weight: bold;
-}
-
-tr {
+.detail-options {
   display: flex;
-  padding-top: 5px;
+  flex-direction: column;
 }
 
-tr > td > button {
-  padding: 5px;
+#size {
 }
 
-.order-essentials {
-  margin-left: 500px;
+.price {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,12 +114,6 @@ hr {
 .delivery-fee,
 .total-amount {
   padding-top: 15px;
-}
-
-/* select size */
-#size {
-  padding: 5px;
-  border-radius: 10px;
 }
 
 /* discout code and gift card*/
@@ -149,6 +144,6 @@ hr {
 /* delivery fee */
 
 .delivery-fee {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
