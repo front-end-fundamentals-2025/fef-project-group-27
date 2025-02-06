@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  background-color: white;
+  height: fit-content;
+}
+
 .popup {
   display: none;
   position: fixed;
