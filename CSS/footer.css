@@ -1,2 +1,22 @@
 /* ONLY FOOTER CSS */
 
+.container {
+  background-color: rgb(4, 22, 81);
+  height: fit-content;
+  padding: 2rem;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+    padding-top: 5px;
+}
