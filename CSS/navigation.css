@@ -49,7 +49,7 @@ nav > .menu > a > i {
 }
 
 .button-content {
-  padding: 1rem 2rem  ;
+  padding: 1rem 0.5rem;
   cursor: pointer;
   
 
@@ -63,8 +63,8 @@ nav > .menu > a > i {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-
 }
+
 
 .button-link:hover {
   font-weight: bold;

@@ -1,7 +1,12 @@
 /* ONLY FOOTER CSS */
 
-.footer-container {
+.footer {
   background-color: rgb(4, 22, 81);
+  color: white;
+  height: 25.9vh;
+}
+
+.footer-container {
   height: fit-content;
   padding: 2rem;
   color: white;
@@ -10,13 +15,56 @@
   justify-items: center;
 }
 
+.about-us {
+  max-width: 300px;
+}
+
 .follow-us {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  max-width: fit-content;
 }
 
-.icons {
+.social-links {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
   padding-top: 5px;
 }
+
+.social-links > li > a {
+  color: white;
+}
+
+.contact-us {
+  max-width: 300px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+  padding-top: 5px;
+}
+
+/* footer bottom */
+/*
+.footer-bottom-container {
+  height: fit-content;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  list-style: none;
+  gap: 5rem;
+}
+*/  
