@@ -34,3 +34,128 @@ nav > .menu > a > i {
   color: white;
   cursor: pointer;
 }
+
+/* dropdown menu */
+
+/* Style for the dropdown container */
+.dropdown-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  border-bottom: 1px solid black ;
+
+  
+}
+
+.button-content {
+  padding: 1rem 2rem  ;
+  cursor: pointer;
+  
+
+}
+
+
+/* Style for the button */
+.button-link {
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+
+}
+
+.button-link:hover {
+  font-weight: bold;
+  text-shadow: 0px 2px 2px black;
+}
+
+/* Style for the dropdown content */
+.button-dropdown-content {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 0;
+  width: 100vw;
+  height: fit-content;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid black ;
+
+}
+
+.button-dropdown-title {
+  margin-left: 13.8rem;
+  margin-top: 1.5rem;
+}
+
+.button-dropdown-title > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ .button-dropdown-title > a:hover {
+  text-decoration: underline;
+}
+
+.button-dropdown-content-list > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-dropdown-content-list > li > a:hover {
+  text-decoration: underline;
+}
+
+.button-dropdown-content-section-container {
+  display: flex;
+  gap: 14rem;
+}
+
+#type1 {
+  margin-left: 14rem;
+}
+
+#type3,
+#type2 {
+  border-left: 1px solid black ;
+  padding-left: 2rem;
+}
+
+#type3 {
+  border-right: 1px solid black ;
+  padding-right: 14.5rem;
+
+}
+
+.button-dropdown-content-section {
+  float: left;
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
+
+.button-dropdown-content-list {
+  list-style: none;
+}
+
+.button-dropdown-content-list > li {
+  text-decoration: none;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Show the dropdown content when hovering over the button-content */
+.button-content:hover .button-dropdown-content {
+  display: block;
+}
+
+hr {
+  width: 500%;
+  color: black;
+}
