@@ -1,17 +1,23 @@
 /* ONLY MAIN CONTENT CSS */
 
+/* Parent container for both sliders */
+.sliders-container {
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  
+}
 
-
-/* css for the automatic / manual image slider */
-
+/* Each slider container */
 .image-slider-container {
+  flex: 1; /* Each slider takes up half the screen */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image-slider {
-  width: 100%;
+  width: 90%; /* Adjust as needed */
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
@@ -37,53 +43,52 @@
   height: 500px;
 }
 
-/* css for manual slider */
-
+/* Manual slider */
 .manual-image-slider {
   position: absolute;
   width: 100%;
   margin-top: -40px;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the buttons horizontally */
+  left: 0; /* Ensure it starts from the left edge of the slider */
 }
 
-.manual-button {
-  border: 2px solid green;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-button:not(:last-child) {
-  margin-right: 40px;
-}
-
-.manual-button:hover {
-  background-color: green;
-}
-
-#radio1:checked ~ .first {
+/* Radio button logic for slider 1 */
+#radio1-1:checked ~ .first {
   margin-left: 0;
 }
-#radio2:checked ~ .first {
+#radio1-2:checked ~ .first {
   margin-left: -20%;
 }
-#radio3:checked ~ .first {
+#radio1-3:checked ~ .first {
   margin-left: -40%;
 }
-#radio4:checked ~ .first {
+#radio1-4:checked ~ .first {
   margin-left: -60%;
 }
 
-/* css for automatic slider */
+/* Radio button logic for slider 2 */
+#radio2-1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2-2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio2-3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio2-4:checked ~ .first {
+  margin-left: -60%;
+}
 
+/* Autoplay slider */
 .autoplay-image-slider {
   position: absolute;
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 460px;
+  left: 0;
 }
 
 .autoplay-image-slider div {
@@ -97,15 +102,30 @@
   margin-right: 40px;
 }
 
-#radio1:checked ~ .autoplay-image-slider .autoplay-button1 {
+/* Autoplay button logic for slider 1 */
+#radio1-1:checked ~ .autoplay-image-slider .autoplay-button1 {
   background: green;
 }
-#radio2:checked ~ .autoplay-image-slider .autoplay-button2 {
+#radio1-2:checked ~ .autoplay-image-slider .autoplay-button2 {
   background: green;
 }
-#radio3:checked ~ .autoplay-image-slider .autoplay-button3 {
+#radio1-3:checked ~ .autoplay-image-slider .autoplay-button3 {
   background: green;
 }
-#radio4:checked ~ .autoplay-image-slider .autoplay-button4 {
+#radio1-4:checked ~ .autoplay-image-slider .autoplay-button4 {
+  background: green;
+}
+
+/* Autoplay button logic for slider 2 */
+#radio2-1:checked ~ .autoplay-image-slider .autoplay-button1 {
+  background: green;
+}
+#radio2-2:checked ~ .autoplay-image-slider .autoplay-button2 {
+  background: green;
+}
+#radio2-3:checked ~ .autoplay-image-slider .autoplay-button3 {
+  background: green;
+}
+#radio2-4:checked ~ .autoplay-image-slider .autoplay-button4 {
   background: green;
 }
