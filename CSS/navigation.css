@@ -43,18 +43,13 @@ nav > .menu > a > i {
   display: flex;
   justify-content: center;
   width: 100vw;
-  border-bottom: 1px solid black ;
-
-  
+  border-bottom: 1px solid black;
 }
 
 .button-content {
   padding: 1rem 0.5rem;
   cursor: pointer;
-  
-
 }
-
 
 /* Style for the button */
 .button-link {
@@ -64,7 +59,6 @@ nav > .menu > a > i {
   cursor: pointer;
   text-transform: uppercase;
 }
-
 
 .button-link:hover {
   font-weight: bold;
@@ -86,8 +80,7 @@ nav > .menu > a > i {
   z-index: 1;
   text-transform: uppercase;
   padding-bottom: 4rem;
-  border-bottom: 1px solid black ;
-
+  border-bottom: 1px solid black;
 }
 
 .button-dropdown-title {
@@ -100,7 +93,7 @@ nav > .menu > a > i {
   color: inherit;
 }
 
- .button-dropdown-title > a:hover {
+.button-dropdown-title > a:hover {
   text-decoration: underline;
 }
 
@@ -124,14 +117,13 @@ nav > .menu > a > i {
 
 #type3,
 #type2 {
-  border-left: 1px solid black ;
+  border-left: 1px solid black;
   padding-left: 2rem;
 }
 
 #type3 {
-  border-right: 1px solid black ;
+  border-right: 1px solid black;
   padding-right: 14.5rem;
-
 }
 
 .button-dropdown-content-section {

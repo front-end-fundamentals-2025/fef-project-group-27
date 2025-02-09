@@ -1,17 +1,24 @@
-.button-cart-icon {
+.filter-button {
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
 }
 
-.cart-popup {
+.filter-button:hover {
+  text-decoration: underline;
+}
+
+.filter-popup {
   display: none;
   position: fixed;
-  top: 0;
+  top: 110px;
   right: 0;
-  width: 400px;
-  height: 100%;
+  width: fit-content;
+  height: fit-content;
   background-color: white;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -19,7 +26,7 @@
   color: black;
 }
 
-.cart-popup-header {
+.filter-popup-header {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -34,18 +41,17 @@
   cursor: pointer;
 }
 
-.cart-checkout-button {
+.filter-options {
   display: flex;
+  gap: 2rem;
+  width: fit-content;
+  padding: 2rem;
 }
 
-.checkout-button {
-  background: black;
-  color: white;
-  border: none;
-  width: 50%;
-  text-decoration: none;
+.btn {
+  padding: 1rem;
+  border: 1px solid black;
+  background: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-

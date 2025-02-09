@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/generalCSS.css" />
+    <link rel="stylesheet" href="CSS/navigation.css" />
+    <link rel="stylesheet" href="CSS/cartpopup.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/productsPage.css" />
+    <link rel="stylesheet" href="CSS/filter.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="main-header">
+        <div class="header-content">
+          <h2>Pants</h2>
+
+          <div class="clothes-sorting">
+            <span style="padding-right: 5px">Sort item by</span>
+            <select class="select" name="sort-after" id="sort-after">
+              <option>Best Match</option>
+              <option>Most Purchased</option>
+              <option>Least Purchased</option>
+              <option>Highest Price</option>
+              <option>Lowest Price</option>
+              <option>Discount</option>
+            </select>
+
+            <button class="filter-button" onclick="toggleFilter()">
+              <span>Filter By</span> <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+            <div class="filter-popup" id="filterPopup">
+              <div class="filter-popup-header">
+                <h3>Your Cart</h3>
+              </div>
+              <hr />
+
+              <div class="filter-options">
+                <button
+                  class="btn btn-categories"
+                  id="Categories"
+                  name="Categories"
+                >
+                  Categories
+                  <i
+                    class="fa-solid fa-caret-down"
+                    style="padding-left: 5px"
+                  ></i>
+                </button>
+                <button class="btn btn-size" id="Sizes" name="Sizes">
+                  Size
+                  <i
+                    class="fa-solid fa-caret-down"
+                    style="padding-left: 5px"
+                  ></i>
+                </button>
+                <button class="btn btn-color" id="Colors" name="Colors">
+                  Color
+                  <i
+                    class="fa-solid fa-caret-down"
+                    style="padding-left: 5px"
+                  ></i>
+                </button>
+                <button class="btn btn-brand" id="Brands" name="Brands">
+                  Brand
+                  <i
+                    class="fa-solid fa-caret-down"
+                    style="padding-left: 5px"
+                  ></i>
+                </button>
+                <button class="btn btn-price" id="Prices" name="Prices">
+                  Price
+                  <i
+                    class="fa-solid fa-caret-down"
+                    style="padding-left: 5px"
+                  ></i>
+                </button>
+              </div>
+
+              <div class="cart-checkout-button">
+                <button onclick="toggleFilter()" class="close-button">
+                  &times;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div class="img-content">
+          <img
+            src="IMG/FC Barcelona Home Football Kit 2020-2021 Short Sleeves Mens-500x500.jpg"
+            alt="#"
+            title="#"
+          />
+          <div class="img-details">
+            <span id="websitename" id="websitename">site name</span>
+            <span id="clothingname" name="clothingname"> clothing name</span>
+            <span id="price" name="price">xxxkr</span>
+          </div>
+        </div>
+        <div class="img-content">
+          <img
+            src="IMG/FC Barcelona Home Football Kit 2020-2021 Short Sleeves Mens-500x500.jpg"
+            alt="#"
+            title="#"
+          />
+          <div class="img-details">
+            <span id="websitename" id="websitename">site name</span>
+            <span id="clothingname" name="clothingname"> clothing name</span>
+            <span id="price" name="price">xxxkr</span>
+          </div>
+        </div>
+        <div class="img-content">
+          <img
+            src="IMG/FC Barcelona Home Football Kit 2020-2021 Short Sleeves Mens-500x500.jpg"
+            alt="#"
+            title="#"
+          />
+          <div class="img-details">
+            <span id="websitename" id="websitename">site name</span>
+            <span id="clothingname" name="clothingname"> clothing name</span>
+            <span id="price" name="price">xxxkr</span>
+          </div>
+        </div>
+        <div class="img-content">
+          <img
+            src="IMG/FC Barcelona Home Football Kit 2020-2021 Short Sleeves Mens-500x500.jpg"
+            alt="#"
+            title="#"
+          />
+          <div class="img-details">
+            <span id="websitename" id="websitename">site name</span>
+            <span id="clothingname" name="clothingname"> clothing name</span>
+            <span id="price" name="price">xxxkr</span>
+          </div>
+        </div>
+        <div class="img-content">
+          <img
+            src="IMG/FC Barcelona Home Football Kit 2020-2021 Short Sleeves Mens-500x500.jpg"
+            alt="#"
+            title="#"
+          />
+          <div class="img-details">
+            <span id="websitename" id="websitename">site name</span>
+            <span id="clothingname" name="clothingname"> clothing name</span>
+            <span id="price" name="price">xxxkr</span>
+          </div>
+        </div>
+        <div class="img-content">
+          <img
+            src="IMG/FC Barcelona Home Football Kit 2020-2021 Short Sleeves Mens-500x500.jpg"
+            alt="#"
+            title="#"
+          />
+          <div class="img-details">
+            <span id="websitename" name="websitename">site name</span>
+            <span id="clothingname" name="clothingname"> clothing name</span>
+            <span id="price" name="price">xxxkr</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="JS/filter.js"></script>
+  </body>
+</html>

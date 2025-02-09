@@ -1,1 +1,57 @@
-/* ONLY MAIN CONTENT CSS */
+.main-header {
+  background-color: black;
+  height: fit-content;
+  color: white;
+}
+.header-content {
+  padding: 1rem;
+}
+
+.clothes-sorting {
+  padding-top: 0.5rem;
+  display: flex;
+}
+
+.select {
+  border: none;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.image-container > img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.img-content > img {
+  border: 1px solid black;
+}
+
+#websitename {
+  font-size: 15px;
+}
+
+#clothingname {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#price {
+  font-size: 15px;
+}
+
+.img-content > img:hover {
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.img-details {
+  display: flex;
+  flex-direction: column;
+}
