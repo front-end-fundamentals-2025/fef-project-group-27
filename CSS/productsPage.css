@@ -22,6 +22,7 @@
   justify-items: center;
   gap: 1rem;
   margin-top: 4rem;
+ 
 }
 
 .image-container > img {
@@ -31,6 +32,7 @@
 
 .img-content > img {
   border: 1px solid black;
+  width: 100%;
 }
 
 #websitename {
