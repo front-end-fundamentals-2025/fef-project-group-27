@@ -1,1 +1,11 @@
 /* ONLY MAIN CONTENT CSS */
+
+.container {
+  display: flex;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10px;
+}
