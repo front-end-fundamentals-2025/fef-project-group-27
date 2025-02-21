@@ -43,6 +43,7 @@
 
           <button class="button-cart-icon" onclick="toggleCart()">
             <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
           </button>
 
           <div class="cart-popup" id="cartPopup">
@@ -50,14 +51,18 @@
               <h3>Your Cart</h3>
             </div>
             <hr />
-
+            <div class="cart-items"></div>
+            <div class="cart-total">
+              <strong>Total: $<span id="cartTotal">0.00</span></strong>
+            </div>
+            <hr />
             <div class="cart-checkout-button">
               <button onclick="toggleCart()" class="close-button">
                 &times;
               </button>
-              <a href="checkoutpage.html" class="checkout-button"
-                >Checkout<i class="fa-solid fa-caret-right"></i
-              ></a>
+              <a href="checkoutpage.html" class="checkout-button">
+                Checkout<i class="fa-solid fa-caret-right"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -509,8 +514,8 @@
 
       <section class="information-image">
         <div class="info-name-price">
-          <h3>Product A</h3>
-          <h3>- $19.99</h3>
+            <h3>Product A </h3>
+            <h3>- $19.99</h3>
 
           <div class="button">
             <span class="size-guide">Size guide</span>
@@ -519,7 +524,7 @@
               <span>Choose size <i class="fa-solid fa-caret-down"></i></span>
             </button>
 
-            <button type="button" class="cart" id="cart">
+            <button type="button" class="cart" id="cart" >
               <span
                 >Put in cart
                 <i
