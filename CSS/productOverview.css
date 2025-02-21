@@ -49,8 +49,8 @@
 
 .size-guide {
   font-size: 16px;
-margin-top: 1rem;
-text-decoration: underline;
+  margin-top: 1rem;
+  text-decoration: underline;
 }
 
 .size-pick {
@@ -85,7 +85,6 @@ hr {
 .description-image {
   text-transform: uppercase;
   width: 700px;
-
 }
 
 .description-image > span {

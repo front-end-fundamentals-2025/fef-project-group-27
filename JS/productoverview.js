@@ -6,3 +6,4 @@ smallImages.forEach((image) => {
     mainImage.src = image.src; // Update the main image source
   });
 });
+
