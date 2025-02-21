@@ -22,17 +22,37 @@
   justify-items: center;
   gap: 1rem;
   margin-top: 4rem;
- 
 }
 
-.image-container > img {
-  width: 100%;
-  margin-bottom: 4rem;
+.image-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-link > img {
+  max-width: 80%;
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-content > img {
-  border: 1px solid black;
-  width: 100%;
+  max-width: 80%;
+  border: 1px solid grey;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.img-content > img:hover {
+}
+
+.img-details {
+  display: flex;
+  flex-direction: column;
 }
 
 #websitename {
@@ -46,14 +66,4 @@
 
 #price {
   font-size: 15px;
-}
-
-.img-content > img:hover {
-  border: 1px solid green;
-  cursor: pointer;
-}
-
-.img-details {
-  display: flex;
-  flex-direction: column;
 }
