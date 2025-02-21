@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/productOverview.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <script src="JS/productoverview.js" defer></script>
   </head>
   <body>
@@ -17,47 +31,52 @@
       <section class="image">
         <!---->
         <div class="small-images">
-          <img src="IMG/jeans.avif"  class="small-image" />
-          <img src="IMG/jeanss1.avif"  class="small-image" />
-          <img src="IMG/jeans3.avif"  class="small-image" />
-          <img src="IMG/jeans4.avif"  class="small-image" />
-
+          <img src="IMG/jeans.avif" class="small-image" />
+          <img src="IMG/jeanss1.avif" class="small-image" />
+          <img src="IMG/jeans3.avif" class="small-image" />
+          <img src="IMG/jeans4.avif" class="small-image" />
         </div>
         <!---->
         <img src="IMG/jeanss1.avif" id="main-image" class="main-image" />
       </section>
 
-      <section class="information image">
-        <div class="info name price">
-          <h5>asjkda</h5>
-          <h4>skjadha</h4>
+      <section class="information-image">
+        <div class="info-name-price">
+          <h2>type of jeans</h2>
+          <h2>price of jeans kr</h2>
 
           <div class="button">
-            <span>jasjh</span>
-            <button>choose size</button>
-            <button>put in cart</button>
+            <span class="size-guide">Size guide</span>
+
+            <button type="button" class="size-pick">
+              <span>Choose size <i class="fa-solid fa-caret-down" ></i></span>
+            </button>
+
+            <button type="button" class="cart" id="cart">
+              <span>Put in cart <i class="fa-solid fa-cart-shopping" style="padding-left: 5px;"></i></span>
+            </button>
+
           </div>
 
-          <div class="description image">
+          <div class="description-image">
             <hr />
-            desription
+           <span> description <i class="fa-solid fa-caret-down" ></i></span>
           </div>
-          <div class="description image">
+          <div class="description-image">
             <hr />
-            details
+            <span>details<i class="fa-solid fa-caret-down" ></i></span>
           </div>
-          <div class="description image">
+          <div class="description-image">
             <hr />
-            materials
+            <span>materials<i class="fa-solid fa-caret-down" ></i></span>
           </div>
-          <div class="description image">
+          <div class="description-image">
             <hr />
-            delivery & return
+            <span>delivery & return<i class="fa-solid fa-caret-down" ></i></span>
+            <hr />
           </div>
         </div>
       </section>
     </main>
-
-    
   </body>
 </html>

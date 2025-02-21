@@ -11,8 +11,7 @@
 }
 
 .image > img {
-  width: 60%;
-  
+  width: fit-content;
 }
 
 .main-image {
@@ -44,5 +43,53 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 10px;
+  margin-top: 1rem;
+  background: none;
+}
+
+.size-guide {
+  font-size: 16px;
+margin-top: 1rem;
+text-decoration: underline;
+}
+
+.size-pick {
+  background: none;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 500px;
+}
+
+.size-pick > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.cart {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: none;
+  width: 500px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 720px;
+  background: none;
+}
+
+.description-image {
+  text-transform: uppercase;
+  width: 700px;
+
+}
+
+.description-image > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
