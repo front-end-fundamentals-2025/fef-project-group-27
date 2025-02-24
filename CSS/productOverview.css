@@ -3,41 +3,43 @@
 .container {
   display: flex;
   gap: 2rem;
+  margin: 5rem;
 }
+
 
 .image {
   display: flex;
   gap: 2rem;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
 }
 
-.image > img {
-  width: fit-content;
-}
 
 .main-image {
-  width: 600px;
   height: 750px;
   object-fit: cover;
 }
 
+
 .small-images {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
-  margin-left: 5rem;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
+
 .small-images > img {
-  width: 100px;
   height: 175px;
   object-fit: cover;
   cursor: pointer;
-  border: 1px solid #ddd;
 }
+
 
 .small-images > img:hover {
   border: 1px solid black;
 }
+
 
 .button {
   display: flex;
@@ -47,11 +49,13 @@
   background: none;
 }
 
+
 .size-guide {
   font-size: 16px;
   margin-top: 1rem;
   text-decoration: underline;
 }
+
 
 .size-pick {
   background: none;
@@ -60,12 +64,14 @@
   width: 500px;
 }
 
+
 .size-pick > span {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
 }
+
 
 .cart {
   background-color: black;
@@ -75,23 +81,72 @@
   width: 500px;
 }
 
-hr {
+
+.description-image > hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 720px;
+  width: 700px;
   background: none;
 }
 
+
 .description-image {
   text-transform: uppercase;
-  width: 700px;
+  width: 100%;
 }
+
 
 .description-image > span {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* size popup */
+.size-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 500px;
+  height: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+
+.size-popup h3 {
+  margin-bottom: 1rem;
+}
+
+
+.size-popup button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.size-popup button:hover {
+  background-color: #f0f0f0;
+}
+
+
+.size-popup button:active {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
