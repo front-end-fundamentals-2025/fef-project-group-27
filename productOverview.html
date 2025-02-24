@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/productOverview.css" />
 
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -19,10 +20,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
 
     <script src="JS/productoverview.js" defer></script>
     <script src="JS/cartpopup.js" defer></script>
@@ -31,28 +34,42 @@
   <body>
     <main class="container">
       <section class="image">
-        <!---->
+        <img src="IMG/jeanss1.avif" id="main-image" class="main-image" />
         <div class="small-images">
-          <img src="IMG/jeans.avif" class="small-image" />
+          <img src="IMG/jweans2.avif" class="small-image" />
           <img src="IMG/jeanss1.avif" class="small-image" />
           <img src="IMG/jeans3.avif" class="small-image" />
           <img src="IMG/jeans4.avif" class="small-image" />
         </div>
-        <!---->
-        <img src="IMG/jeanss1.avif" id="main-image" class="main-image" />
       </section>
+
 
       <section class="information-image">
         <div class="info-name-price">
           <h3>Product A</h3>
           <h3>- $19.99</h3>
 
+
           <div class="button">
             <span class="size-guide">Size guide</span>
 
-            <button type="button" class="size-pick">
-              <span>Choose size <i class="fa-solid fa-caret-down"></i></span>
-            </button>
+
+            <div class="size-pick-container" style="position: relative">
+              <button
+                type="button"
+                class="size-pick"
+                onclick="toggleSizePopup()"
+              >
+                <span>Choose size <i class="fa-solid fa-caret-down"></i></span>
+              </button>
+              <div class="size-popup" id="sizePopup">
+                <button onclick="selectSize('S')">S</button>
+                <button onclick="selectSize('M')">M</button>
+                <button onclick="selectSize('L')">L</button>
+                <button onclick="selectSize('XL')">XL</button>
+              </div>
+            </div>
+
 
             <button
               type="button"
@@ -70,21 +87,40 @@
             </button>
           </div>
 
+
           <div class="description-image">
             <hr />
-            <span> description <i class="fa-solid fa-caret-down"></i></span>
+            <span>
+              description
+              <i class="fa-solid fa-caret-down" style="padding-right: 1rem"></i
+            ></span>
           </div>
           <div class="description-image">
             <hr />
-            <span>details<i class="fa-solid fa-caret-down"></i></span>
+            <span
+              >details<i
+                class="fa-solid fa-caret-down"
+                style="padding-right: 1rem"
+              ></i
+            ></span>
           </div>
           <div class="description-image">
             <hr />
-            <span>materials<i class="fa-solid fa-caret-down"></i></span>
+            <span
+              >materials<i
+                class="fa-solid fa-caret-down"
+                style="padding-right: 1rem"
+              ></i
+            ></span>
           </div>
           <div class="description-image">
             <hr />
-            <span>delivery & return<i class="fa-solid fa-caret-down"></i></span>
+            <span
+              >delivery & return<i
+                class="fa-solid fa-caret-down"
+                style="padding-right: 1rem"
+              ></i
+            ></span>
             <hr />
           </div>
         </div>
@@ -92,3 +128,5 @@
     </main>
   </body>
 </html>
+
+
