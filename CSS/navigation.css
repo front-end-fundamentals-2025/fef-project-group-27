@@ -56,6 +56,13 @@ nav > .menu > a {
   cursor: pointer;
 }
 
+.user {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
 /* dropdown menu */
 
 /* Style for the dropdown container */
@@ -171,4 +178,174 @@ nav > .menu > a {
 hr {
   width: 500%;
   color: black;
+}
+
+
+@media screen and (max-width: 320px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav > .menu {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 0;
+  }
+  
+  .logo {
+    margin-right: 0;
+    order: 0;
+    padding-left: 10px;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    order: 1;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  /* Hide globe text on mobile */
+  .globe span {
+    display: none;
+  }
+
+    .user span {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav > .menu {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .logo {
+    margin-right: 0;
+    order: 0;
+    padding-left: 10px;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    order: 1;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  /* Hide globe text on mobile */
+  .globe span {
+    display: none;
+  }
+
+    .user span {
+      display: none;
+    }
+  
+}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav > .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .logo {
+    margin-right: 0;
+    order: 0;
+    padding-left: 10px;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    order: 1;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+}
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav > .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .logo {
+    margin-right: 0;
+    order: 0;
+    padding-left: 10px;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    order: 1;
+    margin-left: auto;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav > .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .logo {
+    margin-right: 0;
+    order: 0;
+    padding-left: 10px;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    order: 1;
+    margin-left: auto;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  
 }

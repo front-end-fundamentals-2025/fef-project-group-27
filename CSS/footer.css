@@ -14,7 +14,7 @@
   justify-items: center;
 }
 
-.about-us {
+.about-us { 
   max-width: 300px;
 }
 
@@ -36,17 +36,7 @@
   color: white;
 }
 
-.contact-us {
-  max-width: 300px;
-}
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 0.5rem;
-  padding-top: 5px;
-}
 
 /* footer bottom */
 /*
