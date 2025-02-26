@@ -4,7 +4,8 @@ document.querySelector(".hamburger").addEventListener("click", function () {
 
 document.querySelectorAll(".button-content").forEach(function (button) {
   button.addEventListener("click", function (e) {
-    if (window.innerWidth <= 320 && window.innerWidth > 320 || window.innerWidth <= 1024 
+    if (window.innerWidth <= 320 && window.innerWidth > 320 
+        || window.innerWidth <= 10000 
         
     ) {
       e.preventDefault();
@@ -16,7 +17,8 @@ document.querySelectorAll(".button-content").forEach(function (button) {
 // Close menu when clicking outside
 document.addEventListener("click", function (e) {
   if (
-    window.innerWidth > 320 && window.innerWidth > 1024 
+    window.innerWidth > 320 &&
+    window.innerWidth >= 1023 
     
   )
     return;
