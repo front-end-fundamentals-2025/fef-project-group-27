@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/cartpopup.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/index.css" />
-    <link 
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
@@ -22,21 +22,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <script src="/JS/cartpopup.js" defer></script>
+    <script src="/JS/auto.image.slider.js" defer></script>
+    <script src="JS/hamburger.js" defer></script>
   </head>
   <body>
     <!--NAVIGATION-->
     <header>
       <nav>
+        <button class="hamburger">☰</button>
         <div class="logo"><a href="index.html">logo</a></div>
-   
-        
+
         <div class="menu">
           <button class="globe">
-            <i class="fa-solid fa-globe" style="padding-right: 5px"></i>en
+            <i class="fa-solid fa-globe" style="padding-right: 5px"></i
+            ><span>en</span>
           </button>
-          <a href="#"
-            ><i class="fa-solid fa-user" style="padding-right: 5px"></i>login</a
-          >
+          <button class="user">
+            <i class="fa-solid fa-user" style="padding-right: 5px"></i
+            ><span>login</span>
+          </button>
 
           <button class="button-cart-icon" onclick="toggleCart()">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -48,11 +54,8 @@
               <h3>Your Cart</h3>
             </div>
             <hr />
-            <div class="cart-items"></div>
-            <div class="cart-total">
-              <strong>Total: $<span id="cartTotal">0.00</span></strong>
-            </div>
-            <hr />
+            
+            
             <div class="cart-checkout-button">
               <button onclick="toggleCart()" class="close-button">
                 &times;
@@ -69,7 +72,7 @@
 
       <div class="dropdown-container">
         <div class="button-content">
-          <button class="button-link">Clothes</button
+          <button class="button-link">All Clothes</button
           ><i
             class="fa-solid fa-caret-down"
             style="
@@ -80,68 +83,31 @@
           ></i>
           <div class="button-dropdown-content">
             <div class="button-dropdown-title">
-              <a href="#" id="title-href">Show all clothes</a>
+              <button class="back-button">&larr; Back</button>
+
             </div>
             <div class="button-dropdown-content-section-container">
               <div class="button-dropdown-content-section">
                 <ul class="button-dropdown-content-list" id="type1">
                   <hr />
                   <li>
-                    <a href="productsPage.html">Jeans</a>
+                    <a href="productsPage.html" id="productpage">Jeans</a>
                   </li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>Shirts</li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>Shoes</li>
                   <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-              <div class="button-dropdown-content-section" id="type2">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-
-              <div class="button-dropdown-content-section" id="type3">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
+                  <li>Accesories</li>
                   <hr />
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        <!-- second button -->
         <div class="button-content">
-          <button class="button-link">Clothes</button
+          <button class="button-link">Jeans</button
           ><i
             class="fa-solid fa-caret-down"
             style="
@@ -152,68 +118,33 @@
           ></i>
           <div class="button-dropdown-content">
             <div class="button-dropdown-title">
-              <a href="#" id="title-href">Show all clothes</a>
+              <button class="back-button">&larr; Back</button>
+
             </div>
             <div class="button-dropdown-content-section-container">
               <div class="button-dropdown-content-section">
                 <ul class="button-dropdown-content-list" id="type1">
                   <hr />
                   <li>
-                    <a href="#">Jeans</a>
+                    <a href="#" id="#"
+                      >slim fit jeans</a
+                    >
                   </li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>straight fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>regular fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-              <div class="button-dropdown-content-section" id="type2">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-
-              <div class="button-dropdown-content-section" id="type3">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
+                  <li>flare jeans</li>
                   <hr />
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        <!-- next button -->
         <div class="button-content">
-          <button class="button-link">Clothes</button
+          <button class="button-link">Shirts</button
           ><i
             class="fa-solid fa-caret-down"
             style="
@@ -224,68 +155,31 @@
           ></i>
           <div class="button-dropdown-content">
             <div class="button-dropdown-title">
-              <a href="#" id="title-href">Show all clothes</a>
+              <button class="back-button">&larr; Back</button>
             </div>
             <div class="button-dropdown-content-section-container">
               <div class="button-dropdown-content-section">
                 <ul class="button-dropdown-content-list" id="type1">
                   <hr />
                   <li>
-                    <a href="#">Jeans</a>
+                    <a href="#">slim fit jeans</a>
                   </li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>straight fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>regular fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-              <div class="button-dropdown-content-section" id="type2">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-
-              <div class="button-dropdown-content-section" id="type3">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
+                  <li>flare jeans</li>
                   <hr />
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        <!-- next button -->
+
         <div class="button-content">
-          <button class="button-link">Clothes</button
+          <button class="button-link">Shoes</button
           ><i
             class="fa-solid fa-caret-down"
             style="
@@ -296,68 +190,33 @@
           ></i>
           <div class="button-dropdown-content">
             <div class="button-dropdown-title">
-              <a href="#" id="title-href">Show all clothes</a>
+              <button class="back-button">&larr; Back</button>
             </div>
             <div class="button-dropdown-content-section-container">
               <div class="button-dropdown-content-section">
                 <ul class="button-dropdown-content-list" id="type1">
                   <hr />
                   <li>
-                    <a href="#">Jeans</a>
+                    <a href="#" 
+                      >slim fit jeans</a
+                    >
                   </li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>straight fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>regular fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-              <div class="button-dropdown-content-section" id="type2">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-
-              <div class="button-dropdown-content-section" id="type3">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
+                  <li>flare jeans</li>
                   <hr />
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        <!-- next button -->
+
         <div class="button-content">
-          <button class="button-link">Clothes</button
+          <button class="button-link">Accesories</button
           ><i
             class="fa-solid fa-caret-down"
             style="
@@ -368,130 +227,40 @@
           ></i>
           <div class="button-dropdown-content">
             <div class="button-dropdown-title">
-              <a href="#" id="title-href">Show all clothes</a>
+              <button class="back-button">&larr; Back</button>
             </div>
             <div class="button-dropdown-content-section-container">
               <div class="button-dropdown-content-section">
                 <ul class="button-dropdown-content-list" id="type1">
                   <hr />
                   <li>
-                    <a href="#">Jeans</a>
+                    <a href="#" 
+                      >slim fit jeans</a
+                    >
                   </li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>straight fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
+                  <li>regular fit jeans</li>
                   <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-              <div class="button-dropdown-content-section" id="type2">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-
-              <div class="button-dropdown-content-section" id="type3">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
+                  <li>flare jeans</li>
                   <hr />
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="button-content">
-          <button class="button-link">Clothes</button
-          ><i class="fa-solid fa-caret-down" style="padding-left: 5px"></i>
-          <div class="button-dropdown-content">
-            <div class="button-dropdown-title">
-              <a href="#" id="title-href">Show all clothes</a>
-            </div>
-            <div class="button-dropdown-content-section-container">
-              <div class="button-dropdown-content-section">
-                <ul class="button-dropdown-content-list" id="type1">
-                  <hr />
-                  <li>
-                    <a href="#">Jeans</a>
-                  </li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-              <div class="button-dropdown-content-section" id="type2">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
+        <!-- next button -->
 
-              <div class="button-dropdown-content-section" id="type3">
-                <ul class="button-dropdown-content-list">
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                  <li>Jeans</li>
-                  <hr />
-                </ul>
-              </div>
-            </div>
-          </div>
+        <!-- login in button -->
+        <div class="login-button">
+          <i class="fa-solid fa-user" style="padding-right: 5px"></i>login
+        </div>
+
+        <!-- customer service -->
+        <div class="customer-service">
+          <i class="fa-solid fa-headset" style="padding-right: 5px"></i>Customer
+          Service
         </div>
       </div>
     </header>
@@ -506,20 +275,32 @@
               <input type="radio" name="radio-button1" id="radio1-2" />
               <input type="radio" name="radio-button1" id="radio1-3" />
               <input type="radio" name="radio-button1" id="radio1-4" />
-      
+
               <div class="slide first">
-                <img src="IMG/JS_FW24_01_1500x1875.webp" alt="Puffer jacket green" />
+                <img
+                  src="IMG/JS_FW24_01_1500x1875.webp"
+                  alt="Puffer jacket green"
+                />
               </div>
               <div class="slide">
-                <img src="IMG/JS_FW24_04_1500x1875.webp" alt="Guy with backpack" />
+                <img
+                  src="IMG/JS_FW24_04_1500x1875.webp"
+                  alt="Guy with backpack"
+                />
               </div>
               <div class="slide">
-                <img src="IMG/JS_FW24_07_1500x1875.webp" alt="Beige puffer jacket green wall" />
+                <img
+                  src="IMG/JS_FW24_07_1500x1875.webp"
+                  alt="Beige puffer jacket green wall"
+                />
               </div>
               <div class="slide">
-                <img src="IMG/JS_FW24_09_1500x1875.jpg" alt="Girl in front tree" />
+                <img
+                  src="IMG/JS_FW24_09_1500x1875.jpg"
+                  alt="Girl in front tree"
+                />
               </div>
-      
+
               <div class="autoplay-image-slider">
                 <div class="autoplay-button1"></div>
                 <div class="autoplay-button2"></div>
@@ -527,7 +308,7 @@
                 <div class="autoplay-button4"></div>
               </div>
             </div>
-      
+
             <div class="manual-image-slider">
               <label for="radio1-1" class="manual-button"></label>
               <label for="radio1-2" class="manual-button"></label>
@@ -536,7 +317,7 @@
             </div>
           </div>
         </div>
-      
+
         <!-- Slider 2 -->
         <div class="image-slider-container">
           <div class="image-slider">
@@ -545,20 +326,32 @@
               <input type="radio" name="radio-button2" id="radio2-2" />
               <input type="radio" name="radio-button2" id="radio2-3" />
               <input type="radio" name="radio-button2" id="radio2-4" />
-      
+
               <div class="slide first">
-                <img src="IMG/JS_FW24_04_1500x1875.webp" alt="Guy with backpack" />
+                <img
+                  src="IMG/JS_FW24_04_1500x1875.webp"
+                  alt="Guy with backpack"
+                />
               </div>
               <div class="slide">
-                <img src="IMG/JS_FW24_07_1500x1875.webp" alt="Beige puffer jacket green wall" />
+                <img
+                  src="IMG/JS_FW24_07_1500x1875.webp"
+                  alt="Beige puffer jacket green wall"
+                />
               </div>
               <div class="slide">
-                <img src="IMG/JS_FW24_09_1500x1875.jpg" alt="Girl in front tree" />
+                <img
+                  src="IMG/JS_FW24_09_1500x1875.jpg"
+                  alt="Girl in front tree"
+                />
               </div>
               <div class="slide">
-                <img src="IMG/JS_FW24_01_1500x1875.webp" alt="Puffer jacket green" />
+                <img
+                  src="IMG/JS_FW24_01_1500x1875.webp"
+                  alt="Puffer jacket green"
+                />
               </div>
-      
+
               <div class="autoplay-image-slider">
                 <div class="autoplay-button1"></div>
                 <div class="autoplay-button2"></div>
@@ -566,7 +359,7 @@
                 <div class="autoplay-button4"></div>
               </div>
             </div>
-      
+
             <div class="manual-image-slider">
               <label for="radio2-1" class="manual-button"></label>
               <label for="radio2-2" class="manual-button"></label>
@@ -576,67 +369,78 @@
           </div>
         </div>
       </div>
-      
+
       <div class="best-seller-items-container">
         <div class="best-seller-header">Best seller items</div>
         <div class="best-seller-items">
-        <img src="IMG/dress.avif" alt="Girl in brown dress" title="Dress with waist seams">
-        <img src="IMG/jeans.avif" alt="Model in jeans" title="Highwaist denim">
-        <img src="IMG/shirt.avif" alt="Brown cardigan girl" title="Cardigan with buttons">
-        <img src="IMG/sweatshirt.avif" alt="Beige sweatshirt girl" title="Comfy sweatshirt">
-      </div>
+          <img
+            src="IMG/dress.avif"
+            alt="Girl in brown dress"
+            title="Dress with waist seams"
+          />
+          <img
+            src="IMG/jeans.avif"
+            alt="Model in jeans"
+            title="Highwaist denim"
+          />
+          <img
+            src="IMG/shirt.avif"
+            alt="Brown cardigan girl"
+            title="Cardigan with buttons"
+          />
+          <img
+            src="IMG/sweatshirt.avif"
+            alt="Beige sweatshirt girl"
+            title="Comfy sweatshirt"
+          />
+        </div>
       </div>
     </main>
     <!--FOOTER-->
     <footer class="footer">
       <div class="footer-container">
-      <div class="about-us">
-        <h3>About us</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, libero neque! Eaque illo dignissimos dolor doloribus. Aliquid amet velit provident atque. Sequi amet deleniti dolorem recusandae ipsum officia, velit aspernatur.</p>
-      </div>
-      <div class="follow-us">
-        <h3>Follow Us</h3>
-        <ul class="social-links">
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-snapchat"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-tiktok"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="contact-us">
-        <h3>Contact Us</h3>
-        <ul class="contact-info">
-          <li><span class="icon home"></span>company name</li>
-            <li><span class="icon location"></span>location</li>
-            <li><span class="icon phone"></span>phone number</li>
-            <li><span class="icon email"></span>email</li>
+        <div class="about-us">
+          <h3>About us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, libero neque! Eaque illo dignissimos dolor doloribus.
+            Aliquid amet velit provident atque. Sequi amet deleniti dolorem
+            recusandae ipsum officia, velit aspernatur.
+          </p>
+        </div>
+        <div class="follow-us">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
           </ul>
-        </ul>
+        </div>
       </div>
-    </div>
-          <!-- Footer Bottom -->
-    <!--<div class="footer-bottom-container">
+      <!-- Footer Bottom -->
+      <!--<div class="footer-bottom-container">
       <p>© 2025 name of website. All Rights Reserved</p>
         <ul class="footer-bottom-links">
           <li>
@@ -648,9 +452,5 @@
         </ul>
     </div>-->
     </footer>
-
-    <script src="/JS/cartpopup.js"></script>
-    <script src="/JS/auto.image.slider.js"></script>
-
   </body>
 </html>
