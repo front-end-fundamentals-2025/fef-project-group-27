@@ -7,3 +7,6 @@ smallImages.forEach((image) => {
   });
 });
 
+
+
+
