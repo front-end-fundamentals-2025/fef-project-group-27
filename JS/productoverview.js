@@ -7,6 +7,13 @@ smallImages.forEach((image) => {
   });
 });
 
-
-
-
+function toggleSizePopup() {
+  const sizePopup = document.getElementById("sizePopup");
+  if (sizePopup.style.display === "block") {
+    sizePopup.style.display = "none";
+  } else {
+    sizePopup.style.display = "block";
+    updateSizePopup();
+  }
+ }
+ 
