@@ -163,23 +163,21 @@ hr {
 
 .information {
 background-color: darkgrey;
-height: 50vh;
+height: 100vh;
 border-radius: 5px;
 }
 
-.contact-information {
+.contact-information, .order-information {
   margin: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#email {
+
+#email, #phonenumber, #fname, #lname, #adress, #postal-code {
   padding: 1rem;
   border-radius: 5px;
   border: none;
 }
-#phonenumber {
-  padding: 1rem;
-  border-radius: 5px;
-  border: none;
-}
+
+
