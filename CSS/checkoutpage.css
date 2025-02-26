@@ -160,3 +160,27 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+
+.information {
+background-color: darkgrey;
+height: 50vh;
+margin-top: 10%;
+border-radius: 5px;
+}
+
+.contact-information {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#email {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+#phonenumber {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
