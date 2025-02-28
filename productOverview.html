@@ -27,8 +27,12 @@
     <script src="JS/productoverview.js" defer></script>
     <script src="JS/cartpopup.js" defer></script>
     <script src="JS/hamburger.js" defer></script>
+    <script src="JS/general.js" defer></script>
   </head>
   <body>
+<!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
     <!--NAVIGATION-->
     <header>
       <nav>
@@ -57,7 +61,9 @@
               <h3>Your Cart</h3>
             </div>
             <hr />
-            <div class="cart-items"></div>
+            <div class="cart-items">
+              
+            </div>
             <section class="cart-section">
               <div class="cart-checkout-button">
                 <button onclick="toggleCart()" class="close-button">

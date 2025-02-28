@@ -79,12 +79,87 @@
 .cart-info {
   height: fit-content;
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-details {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.size , .quantity {
+  padding: 10px;
+  border-radius: 100px;
+  width: fit-content;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+
+}
+
+
+.size-pick-popup-incart {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.size-popup-in-cart {
+  display: none;
+  position: relative;
+  width: 100px;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.size-popup-in-cart button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.size-popup-in-cart button:hover {
+  background-color: #f0f0f0;
+}
+
+/*  */
+.quantity-popup-in-cart {
+  display: none;
+  position: relative;
+  width: 100px;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.quantity-popup-in-cart button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity-popup-in-cart button:hover {
+  background-color: #f0f0f0;
 }
 
 .removefromcart {
   background: none;
   border: none;
+  cursor: pointer;
 }
+
+
 
 .cart-buttons {
   display: flex;

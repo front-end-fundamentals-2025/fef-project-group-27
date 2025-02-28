@@ -14,3 +14,51 @@
   margin-bottom: 2rem;
 }
 
+
+/* general.css */
+
+/* Modal Overlay */
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Ensure it's above everything else */
+}
+
+/* Popups */
+.size-popup,
+.size-popup-in-cart,
+.quantity-popup-in-cart, .cart-popup {
+  display: none;
+  position: fixed; /* Use fixed positioning */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 1000; /* Ensure popups are above the overlay */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup Buttons */
+.size-popup button,
+.size-popup-in-cart button,
+.quantity-popup-in-cart button, .cart-popup {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.size-popup button:hover,
+.size-popup-in-cart button:hover,
+.quantity-popup-in-cart button:hover {
+  background-color: #f0f0f0;
+}
