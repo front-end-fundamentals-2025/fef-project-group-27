@@ -1,12 +1,10 @@
 /* ONLY MAIN CONTENT CSS */
 
-
 .container {
   display: flex;
   gap: 2rem;
   margin: 5rem;
 }
-
 
 .image {
   display: flex;
@@ -15,12 +13,10 @@
   flex-wrap: nowrap;
 }
 
-
 .main-image {
   height: 750px;
   object-fit: cover;
 }
-
 
 .small-images {
   display: flex;
@@ -29,18 +25,15 @@
   justify-content: space-evenly;
 }
 
-
 .small-images > img {
   height: 175px;
   object-fit: cover;
   cursor: pointer;
 }
 
-
 .small-images > img:hover {
   border: 1px solid black;
 }
-
 
 .button {
   display: flex;
@@ -50,13 +43,11 @@
   background: none;
 }
 
-
 .size-guide {
   font-size: 16px;
   margin-top: 1rem;
   text-decoration: underline;
 }
-
 
 .size-pick {
   background: none;
@@ -65,14 +56,12 @@
   width: 500px;
 }
 
-
 .size-pick > span {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
 }
-
 
 .cart {
   background-color: black;
@@ -82,7 +71,6 @@
   width: 500px;
 }
 
-
 .description-image > hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -90,12 +78,10 @@
   background: none;
 }
 
-
 .description-image {
   text-transform: uppercase;
   width: 100%;
 }
-
 
 .description-image > span {
   display: flex;
@@ -109,50 +95,33 @@
   top: 100%;
   left: 0;
   width: 500px;
-  height: auto;
   background-color: white;
   border: 1px solid #ddd;
-  z-index: 1000;
+  z-index: 1000; /* Ensure it's above other elements */
 }
-
-
-.size-popup h3 {
-  margin-bottom: 1rem;
-}
-
 
 .size-popup button {
-  padding: 1rem;
-  border: 1px solid black;
-  background: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 100%;
-  float: left;
-  left: 0;
-  position: relative;
+  padding: 20px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-
 
 .size-popup button:hover {
   background-color: #f0f0f0;
+  font-size: medium;
 }
 
-
-.size-popup button:active {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+.size-divider {
+  width: 100%;
 }
+
 
 
 /* responsiveness */
-
 
 /* max 320px */
 @media screen and (max-width: 320px) {
@@ -162,13 +131,11 @@
     margin: 1rem;
   }
 
-
   .image {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-
 
   .small-images {
     display: grid;
@@ -177,32 +144,26 @@
     justify-items: center;
   }
 
-
   .size-pick {
     width: 100%;
   }
-
 
   .size-popup {
     width: 100%;
   }
 
-
   .cart {
     width: 100%;
   }
-
 
   .description-image > hr {
     width: 100%;
   }
 
-
   .hamburger {
     display: block;
     order: -1;
   }
-
 
   .login-button {
     width: 100%;
@@ -211,14 +172,12 @@
     padding: 20px;
   }
 
-
   .customer-service {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
   }
-
 
   .dropdown-container {
     display: none;
@@ -232,11 +191,9 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-
   .dropdown-container.active {
     display: block;
   }
-
 
   .button-content {
     width: 100%;
@@ -245,7 +202,6 @@
     display: flex;
     align-items: center;
   }
-
 
   .button-link {
     width: 100%;
@@ -257,7 +213,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
 
   .button-dropdown-content {
     position: fixed;
@@ -272,11 +227,9 @@
     overflow-y: auto;
   }
 
-
   .button-content.active .button-dropdown-content {
     left: 0;
   }
-
 
   /* Secondary popup styles */
   .secondary-popup {
@@ -292,11 +245,9 @@
     overflow-y: auto;
   }
 
-
   .secondary-popup.active {
     left: 0; /* Slide in */
   }
-
 
   .back-button {
     background: none;
@@ -306,13 +257,11 @@
     margin-bottom: 10px;
   }
 
-
   .secondary-popup-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
 
   .button-dropdown-content-section-container {
     display: flex;
@@ -320,49 +269,40 @@
     gap: 10px;
   }
 
-
   .button-dropdown-content-section {
     width: 100%;
   }
 
-
   .button-dropdown-content-list hr {
     display: none;
   }
-
 
   .button-dropdown-content-list {
     list-style: none;
     padding: 0;
   }
 
-
   .button-dropdown-content-list li {
     padding: 10px 0;
     cursor: pointer;
   }
 
-
   .fa-caret-down {
     transition: transform 0.3s ease;
   }
-
 
   .button-content.active .fa-caret-down {
     transform: rotate(180deg);
   }
 
-
   .button-dropdown-title {
     margin: 0;
   }
-
 
   #type1 {
     margin: 0;
   }
 }
-
 
 /* min 321px and max 376px */
 @media screen and (min-width: 321px) and (max-width: 376px) {
@@ -371,7 +311,6 @@
     order: -1;
   }
 
-
   .login-button {
     width: 100%;
     display: flex;
@@ -379,14 +318,12 @@
     padding: 20px;
   }
 
-
   .customer-service {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
   }
-
 
   .dropdown-container {
     display: none;
@@ -400,11 +337,9 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-
   .dropdown-container.active {
     display: block;
   }
-
 
   .button-content {
     width: 100%;
@@ -413,7 +348,6 @@
     display: flex;
     align-items: center;
   }
-
 
   .button-link {
     width: 100%;
@@ -425,7 +359,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
 
   .button-dropdown-content {
     position: fixed;
@@ -440,11 +373,9 @@
     overflow-y: auto;
   }
 
-
   .button-content.active .button-dropdown-content {
     left: 0;
   }
-
 
   /* Secondary popup styles */
   .secondary-popup {
@@ -460,11 +391,9 @@
     overflow-y: auto;
   }
 
-
   .secondary-popup.active {
     left: 0; /* Slide in */
   }
-
 
   .back-button {
     background: none;
@@ -474,13 +403,11 @@
     margin-bottom: 10px;
   }
 
-
   .secondary-popup-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
 
   .button-dropdown-content-section-container {
     display: flex;
@@ -488,49 +415,40 @@
     gap: 10px;
   }
 
-
   .button-dropdown-content-section {
     width: 100%;
   }
 
-
   .button-dropdown-content-list hr {
     display: none;
   }
-
 
   .button-dropdown-content-list {
     list-style: none;
     padding: 0;
   }
 
-
   .button-dropdown-content-list li {
     padding: 10px 0;
     cursor: pointer;
   }
 
-
   .fa-caret-down {
     transition: transform 0.3s ease;
   }
-
 
   .button-content.active .fa-caret-down {
     transform: rotate(180deg);
   }
 
-
   .button-dropdown-title {
     margin: 0;
   }
-
 
   #type1 {
     margin: 0;
   }
 }
-
 
 /* min 377px and max 426px */
 @media screen and (min-width: 377px) and (max-width: 426px) {
@@ -539,7 +457,6 @@
     order: -1;
   }
 
-
   .login-button {
     width: 100%;
     display: flex;
@@ -547,14 +464,12 @@
     padding: 20px;
   }
 
-
   .customer-service {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
   }
-
 
   .dropdown-container {
     display: none;
@@ -568,11 +483,9 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-
   .dropdown-container.active {
     display: block;
   }
-
 
   .button-content {
     width: 100%;
@@ -581,7 +494,6 @@
     display: flex;
     align-items: center;
   }
-
 
   .button-link {
     width: 100%;
@@ -593,7 +505,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
 
   .button-dropdown-content {
     position: fixed;
@@ -608,11 +519,9 @@
     overflow-y: auto;
   }
 
-
   .button-content.active .button-dropdown-content {
     left: 0;
   }
-
 
   /* Secondary popup styles */
   .secondary-popup {
@@ -628,11 +537,9 @@
     overflow-y: auto;
   }
 
-
   .secondary-popup.active {
     left: 0; /* Slide in */
   }
-
 
   .back-button {
     background: none;
@@ -642,13 +549,11 @@
     margin-bottom: 10px;
   }
 
-
   .secondary-popup-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
 
   .button-dropdown-content-section-container {
     display: flex;
@@ -656,49 +561,40 @@
     gap: 10px;
   }
 
-
   .button-dropdown-content-section {
     width: 100%;
   }
 
-
   .button-dropdown-content-list hr {
     display: none;
   }
-
 
   .button-dropdown-content-list {
     list-style: none;
     padding: 0;
   }
 
-
   .button-dropdown-content-list li {
     padding: 10px 0;
     cursor: pointer;
   }
 
-
   .fa-caret-down {
     transition: transform 0.3s ease;
   }
-
 
   .button-content.active .fa-caret-down {
     transform: rotate(180deg);
   }
 
-
   .button-dropdown-title {
     margin: 0;
   }
-
 
   #type1 {
     margin: 0;
   }
 }
-
 
 /* min 427px and max 480px */
 @media screen and (min-width: 427px) and (max-width: 600px) {
@@ -707,7 +603,6 @@
     order: -1;
   }
 
-
   .login-button {
     width: 100%;
     display: flex;
@@ -715,14 +610,12 @@
     padding: 20px;
   }
 
-
   .customer-service {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
   }
-
 
   .dropdown-container {
     display: none;
@@ -736,11 +629,9 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-
   .dropdown-container.active {
     display: block;
   }
-
 
   .button-content {
     width: 100%;
@@ -749,7 +640,6 @@
     display: flex;
     align-items: center;
   }
-
 
   .button-link {
     width: 100%;
@@ -761,7 +651,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
 
   .button-dropdown-content {
     position: fixed;
@@ -776,11 +665,9 @@
     overflow-y: auto;
   }
 
-
   .button-content.active .button-dropdown-content {
     left: 0;
   }
-
 
   /* Secondary popup styles */
   .secondary-popup {
@@ -796,11 +683,9 @@
     overflow-y: auto;
   }
 
-
   .secondary-popup.active {
     left: 0; /* Slide in */
   }
-
 
   .back-button {
     background: none;
@@ -810,13 +695,11 @@
     margin-bottom: 10px;
   }
 
-
   .secondary-popup-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
 
   .button-dropdown-content-section-container {
     display: flex;
@@ -824,49 +707,40 @@
     gap: 10px;
   }
 
-
   .button-dropdown-content-section {
     width: 100%;
   }
 
-
   .button-dropdown-content-list hr {
     display: none;
   }
-
 
   .button-dropdown-content-list {
     list-style: none;
     padding: 0;
   }
 
-
   .button-dropdown-content-list li {
     padding: 10px 0;
     cursor: pointer;
   }
 
-
   .fa-caret-down {
     transition: transform 0.3s ease;
   }
-
 
   .button-content.active .fa-caret-down {
     transform: rotate(180deg);
   }
 
-
   .button-dropdown-title {
     margin: 0;
   }
-
 
   #type1 {
     margin: 0;
   }
 }
-
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .hamburger {
@@ -874,7 +748,6 @@
     order: -1;
   }
 
-
   .login-button {
     width: 100%;
     display: flex;
@@ -882,14 +755,12 @@
     padding: 20px;
   }
 
-
   .customer-service {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
   }
-
 
   .dropdown-container {
     display: none;
@@ -903,11 +774,9 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-
   .dropdown-container.active {
     display: block;
   }
-
 
   .button-content {
     width: 100%;
@@ -916,7 +785,6 @@
     display: flex;
     align-items: center;
   }
-
 
   .button-link {
     width: 100%;
@@ -928,7 +796,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
 
   .button-dropdown-content {
     position: fixed;
@@ -943,11 +810,9 @@
     overflow-y: auto;
   }
 
-
   .button-content.active .button-dropdown-content {
     left: 0;
   }
-
 
   /* Secondary popup styles */
   .secondary-popup {
@@ -963,11 +828,9 @@
     overflow-y: auto;
   }
 
-
   .secondary-popup.active {
     left: 0; /* Slide in */
   }
-
 
   .back-button {
     background: none;
@@ -977,13 +840,11 @@
     margin-bottom: 10px;
   }
 
-
   .secondary-popup-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
 
   .button-dropdown-content-section-container {
     display: flex;
@@ -991,56 +852,46 @@
     gap: 10px;
   }
 
-
   .button-dropdown-content-section {
     width: 100%;
   }
 
-
   .button-dropdown-content-list hr {
     display: none;
   }
-
 
   .button-dropdown-content-list {
     list-style: none;
     padding: 0;
   }
 
-
   .button-dropdown-content-list li {
     padding: 10px 0;
     cursor: pointer;
   }
 
-
   .fa-caret-down {
     transition: transform 0.3s ease;
   }
-
 
   .button-content.active .fa-caret-down {
     transform: rotate(180deg);
   }
 
-
   .button-dropdown-title {
     margin: 0;
   }
-
 
   #type1 {
     margin: 0;
   }
 }
 
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .hamburger {
     display: none;
     order: -1;
   }
-
 
   .login-button {
     width: 100%;
@@ -1049,7 +900,6 @@
     padding: 20px;
   }
 
-
   .customer-service {
     width: 100%;
     display: none;
@@ -1057,27 +907,22 @@
     padding: 20px;
   }
 
-
   .dropdown-container {
     display: flex;
-
 
     background: white;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-
   .dropdown-container.active {
     display: block;
   }
-
 
   .button-content {
     display: flex;
     align-items: center;
   }
-
 
   .button-link {
     padding: 15px;
@@ -1088,7 +933,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
 
   .button-dropdown-content {
     position: fixed;
@@ -1103,14 +947,12 @@
     overflow-y: auto;
   }
 
-
   .button-content.active .button-dropdown-content {
     left: 0;
     width: 100%;
     top: 100%;
     position: absolute;
   }
-
 
   .back-button {
     display: none;
@@ -1121,13 +963,11 @@
     margin-bottom: 10px;
   }
 
-
   .button-dropdown-content-section-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
 
   .button-dropdown-content-section {
     width: 100%;
@@ -1135,38 +975,31 @@
     padding: 0;
   }
 
-
   .button-dropdown-content-list hr {
     display: none;
   }
-
 
   .button-dropdown-content-list {
     list-style: none;
     padding: 0;
   }
 
-
   .button-dropdown-content-list li {
     padding: 10px 0;
     cursor: pointer;
   }
 
-
   .fa-caret-down {
     transition: transform 0.3s ease;
   }
-
 
   .button-content.active .fa-caret-down {
     transform: rotate(180deg);
   }
 
-
   .button-dropdown-title {
     margin: 0;
   }
-
 
   #type1 {
     margin: 0;

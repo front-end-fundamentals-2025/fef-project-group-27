@@ -930,8 +930,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  
-
   .hamburger {
     display: none;
     order: -1;
@@ -953,9 +951,7 @@
 
   .dropdown-container {
     display: flex;
-   
     background: white;
-    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
@@ -964,7 +960,6 @@
   }
 
   .button-content {
-    
     display: flex;
     align-items: center;
   }
@@ -987,7 +982,6 @@
     height: fit-content;
     background: white;
     transition: left 0.3s ease;
-    z-index: 1001;
     padding: 20px;
     overflow-y: auto;
   }
@@ -1007,7 +1001,6 @@
     cursor: pointer;
     margin-bottom: 10px;
   }
-
 
   .button-dropdown-content-section-container {
     display: flex;

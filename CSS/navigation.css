@@ -10,6 +10,8 @@ nav {
 
 .logo {
   margin-right: auto;
+  width: 30%;
+
 }
 
 .menu {
@@ -415,3 +417,4 @@ hr {
     gap: 10px;
   }
 }
+
