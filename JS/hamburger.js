@@ -32,8 +32,11 @@ document.addEventListener("click", function (e) {
 });
 
 const productpage = document.getElementById("productpage");
-productpage.addEventListener("click", function () {
-  window.location.href = "productsPage.html";
-});
+if(productpage) {
+  productpage.addEventListener("click", function () {
+    window.location.href = "productsPage.html";
+  });
+}
+
 
 

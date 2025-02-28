@@ -34,7 +34,6 @@ function animateCartIcon() {
 
 function updateCartPopup() {
     const cartItems = document.querySelector('.cart-items');
-    const cartTotal = document.getElementById('cartTotal');
     cartItems.innerHTML = '';
     let total = 0;
 
@@ -50,13 +49,16 @@ function updateCartPopup() {
         total += item.price;
     });
 
-    cartTotal.textContent = total.toFixed(2);
+    const cartTotal = document.createElement('div');
+    cartTotal.id = 'cartTotal';
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+    cartItems.appendChild(cartTotal);
 }
 
 function removeFromCart(index) {
     cart.splice(index, 1);
     saveCartToLocalStorage();
-    updateCartCount();
+    updateCartCount(); 
     updateCartPopup();
 }
 
@@ -68,8 +70,4 @@ function saveCartToLocalStorage() {
 document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
     updateCartPopup();
-
-    document.getElementById('cart').addEventListener('click', function() {
-        addToCart(this);
-    });
 });

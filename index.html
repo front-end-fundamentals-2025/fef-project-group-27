@@ -48,6 +48,15 @@
             ><span>login</span>
           </button>
 
+
+          <button
+              onclick="addToCart(this)"
+              data-product='{"name": "Product Name", "price": 29.99, "image": "/IMG/jeanss1.avif"}'
+            >
+              Add to Cart
+            </button>
+          
+
           <button class="button-cart-icon" onclick="toggleCart()">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cartCount">0</span>
@@ -58,7 +67,10 @@
               <h3>Your Cart</h3>
             </div>
             <hr />
+            <div class="cart-items">
 
+            </div>
+          
             <div class="cart-checkout-button">
               <button onclick="toggleCart()" class="close-button">
                 &times;
@@ -127,7 +139,7 @@
                 <ul class="button-dropdown-content-list" id="type1">
                   <hr />
                   <li>
-                    <a href="#" id="#">slim fit jeans</a>
+                    <a href="pr" id="#">slim fit jeans</a>
                   </li>
                   <hr />
                   <li>straight fit jeans</li>
