@@ -18,7 +18,7 @@ document.querySelectorAll(".button-content").forEach(function (button) {
 document.addEventListener("click", function (e) {
   if (
     window.innerWidth > 320 &&
-    window.innerWidth >= 1023 
+    window.innerWidth >= 10000 
     
   )
     return;

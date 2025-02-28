@@ -3,7 +3,7 @@
 nav {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  height: 10vh;
   position: relative;
   background-color: black;
 }
@@ -32,10 +32,6 @@ nav {
   margin-right: 10px;
 }
 
-nav > .logo {
-  font-size: 1.5rem;
-}
-
 nav > .menu {
   display: flex;
   gap: 2rem;
@@ -46,8 +42,6 @@ nav > .menu > a {
   text-decoration: none;
   color: white;
 }
-
-
 
 .globe {
   border: none;
@@ -180,7 +174,6 @@ hr {
   color: black;
 }
 
-
 @media screen and (max-width: 320px) {
   nav {
     flex-wrap: nowrap;
@@ -194,11 +187,10 @@ hr {
     align-items: center;
     margin-right: 0;
   }
-  
-  .logo {
-    margin-right: 0;
-    order: 0;
-    padding-left: 10px;
+
+  nav > .logo > a > img {
+    width: 60%;
+    margin-top: 1rem;
   }
 
   .menu {
@@ -214,9 +206,9 @@ hr {
     display: none;
   }
 
-    .user span {
-      display: none;
-    }
+  .user span {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 376px) {
@@ -233,10 +225,9 @@ hr {
     margin-right: 0;
   }
 
-  .logo {
-    margin-right: 0;
-    order: 0;
-    padding-left: 10px;
+  nav > .logo > a > img {
+    width: 50%;
+    margin-top: 1rem;
   }
 
   .menu {
@@ -252,10 +243,9 @@ hr {
     display: none;
   }
 
-    .user span {
-      display: none;
-    }
-  
+  .user span {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 377px) and (max-width: 426px) {
@@ -272,10 +262,21 @@ hr {
     margin-right: 0;
   }
 
-  .logo {
-    margin-right: 0;
-    order: 0;
-    padding-left: 10px;
+  nav > .logo > a > img {
+    width: 60%;
+    margin-top: 1rem;
+  }
+
+  .globe {
+    display: flex;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .button-cart-icon {
+    display: flex;
   }
 
   .menu {
@@ -285,7 +286,6 @@ hr {
     margin-left: auto;
     gap: 10px;
   }
-
 }
 
 @media screen and (min-width: 427px) and (max-width: 768px) {
@@ -306,6 +306,23 @@ hr {
     margin-right: 0;
     order: 0;
     padding-left: 10px;
+  }
+
+  nav > .logo > a > img {
+    width: 30%;
+    margin-top: 1.25rem;
+  }
+
+  .globe {
+    display: flex;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .button-cart-icon {
+    display: flex;
   }
 
   .menu {
@@ -331,10 +348,21 @@ hr {
     margin-right: 0;
   }
 
-  .logo {
-    margin-right: 0;
-    order: 0;
-    padding-left: 10px;
+  .nav > .logo > a > img {
+    width: 30%;
+    margin-top: 1.25rem;
+  }
+
+  .globe {
+    display: flex;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .button-cart-icon {
+    display: flex;
   }
 
   .menu {
@@ -346,6 +374,44 @@ hr {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width:1024px) {
+@media screen and (min-width: 769px)  {
+
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav > .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  nav > .logo > a > img {
+    width: 30%;
+    margin-top: 3%;
+  }
   
+  
+  .globe {
+    display: flex;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .button-cart-icon {
+    display: flex;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    order: 1;
+    margin-left: auto;
+    gap: 10px;
+  }
 }
