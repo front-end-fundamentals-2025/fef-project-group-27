@@ -1,59 +1,98 @@
-/* ONLY FOOTER CSS */
-
+/* Footer Styles */
 .footer {
-  background-color: rgb(103, 102, 102);
-  color: white;
+  background-color: #333;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  height: fit-content;
-  padding: 2rem;
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-}
-
-.about-us { 
-  max-width: 300px;
-}
-
-.follow-us {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.social-links {
-  display: flex;
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
   list-style: none;
-  gap: 0.5rem;
-  padding-top: 5px;
+  padding: 0;
 }
 
-.social-links > li > a {
-  color: white;
+.footer-section ul li {
+  margin-bottom: 10px;
 }
 
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+.footer-section ul li a:hover {
+  color: #ff6f61;
+}
 
-/* footer bottom */
-/*
-.footer-bottom-container {
-  height: fit-content;
-  padding: 2rem;
-  background-color: black;
-  color: white;
+.social-icons {
   display: flex;
-  justify-content: flex-start;
+  gap: 10px;
 }
 
-.footer-bottom-links {
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6f61;
+}
+
+.newsletter-form {
   display: flex;
-  justify-content: flex-end;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   flex: 1;
-  list-style: none;
-  gap: 5rem;
 }
-*/  
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #e65a50;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}

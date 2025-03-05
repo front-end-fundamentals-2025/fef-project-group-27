@@ -4,7 +4,7 @@ document.querySelector(".hamburger").addEventListener("click", function () {
 
 document.querySelectorAll(".button-content").forEach(function (button) {
   button.addEventListener("click", function (e) {
-    if (window.innerWidth <= 320 && window.innerWidth > 320 
+    if (window.innerWidth <= 320 && window.innerWidth > 321 
         || window.innerWidth <= 10000 
         
     ) {

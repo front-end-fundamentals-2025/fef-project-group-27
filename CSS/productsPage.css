@@ -22,37 +22,32 @@
   justify-items: center;
   gap: 1rem;
   margin-top: 4rem;
-}
-
-.image-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-link > img {
-  max-width: 80%;
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  margin-right:10rem;
+  
 }
 
 .img-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .img-content > img {
-  max-width: 80%;
+  max-width: 100%;
   border: 1px solid grey;
-  cursor: pointer;
   object-fit: cover;
 }
 
-.img-content > img:hover {
+.img-content:first-child {
+  cursor: pointer;
 }
 
 .img-details {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 }
 
 #websitename {
