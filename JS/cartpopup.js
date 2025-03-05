@@ -32,10 +32,7 @@ function selectSizeInCart(size, index) {
   toggleSizePopupInCart(index); // Close the size popup
 }
 
-
-
 // quantity
-
 
 function toggleQuantityPopupInCart(index) {
   const quantityPopup = document.getElementById(`quantityPopupInCart${index}`);
@@ -72,8 +69,21 @@ function addToCart(product) {
 
   const productData = JSON.parse(product.getAttribute("data-product"));
   productData.size = selectedSize; // Add the selected size
-  productData.quantity = 1; // Initialize quantity to 1
-  cart.push(productData);
+
+  // Check if the item with the same size already exists in the cart
+  const existingItemIndex = cart.findIndex(
+    (item) => item.name === productData.name && item.size === productData.size
+  );
+
+  if (existingItemIndex !== -1) {
+    // If the item exists, update the quantity
+    cart[existingItemIndex].quantity += 1;
+  } else {
+    // If the item does not exist, add it to the cart
+    productData.quantity = 1; // Initialize quantity to 1
+    cart.push(productData);
+  }
+
   saveCartToLocalStorage();
   updateCartCount();
   updateCartPopup();
@@ -128,7 +138,9 @@ function updateCartPopup() {
           </section>
 <section class="quantity-pick-popup-in-cart" > 
 <button type="button" class="quantity" onclick="toggleQuantityPopupInCart(${index})">
-        ${item.quantity}<i class="fa-solid fa-caret-down" style="padding-left:5px;"></i>
+        ${
+          item.quantity
+        }<i class="fa-solid fa-caret-down" style="padding-left:5px;"></i>
       </button>
       <div class="quantity-popup-in-cart" id="quantityPopupInCart${index}">
         <button onclick="selectQuantityInCart(1, ${index})">1</button>
