@@ -57,7 +57,7 @@ nav > .logo > a {
 .order-content {
   padding: 2rem;
   height: fit-content;
-  width: fit-content;
+  width: 800px;
   background-color: #d4d8dd;
   text-decoration: none;
   border-radius: 8px;
@@ -182,7 +182,6 @@ border-radius: 5px;
 
 
 
-
 .image-content {
   display: flex;
   justify-content: space-between;
@@ -208,13 +207,34 @@ border-radius: 5px;
   gap: 0.5rem;
 }
 
+.content-details p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .detail-options {
   display: flex;
   gap: 0.5rem;
 }
 
+.size-select,
+.quantity-select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
 .price {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.remove-item {
+  cursor: pointer;
 }
 
 .total-amount {

@@ -187,3 +187,8 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
   updateCartPopup();
 });
+
+
+window.addEventListener("cartUpdated", () => {
+  updateCartPopup(); // Refresh the cart popup when the cart is updated
+});
