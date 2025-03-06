@@ -92,7 +92,7 @@ function addToCart(product) {
   // Reset the size selection
   selectedSize = null;
   const sizePickButton = document.querySelector(".size-pick > span");
-  sizePickButton.textContent = "Choose size"; // Reset the button text
+  sizePickButton.textContent = "Choose size "; // Reset the button text
 }
 
 function updateCartCount() {

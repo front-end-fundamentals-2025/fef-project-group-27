@@ -181,3 +181,44 @@ border-radius: 5px;
 }
 
 
+
+
+.image-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.image-content-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-content-details img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.total-amount {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
