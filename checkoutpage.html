@@ -1,91 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Checkout Page</title>
     <link rel="stylesheet" href="CSS/generalCSS.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/checkoutpage.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
     <script src="JS/checkout.js" defer></script>
-
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <div class="arrow-back">
-          <a href="index.html">
-            <i class="fa-solid fa-arrow-left" style="padding-right: 5px"></i>
-            Continue Shopping</a
-          >
-        </div>
-        <div class="logo"><a href="index.html">logo</a></div>
-      </nav>
+        <nav>
+            <div class="arrow-back">
+                <a href="index.html">
+                    <i class="fa-solid fa-arrow-left" style="padding-right: 5px"></i>
+                    Continue Shopping
+                </a>
+            </div>
+            <div class="logo"><a href="index.html">logo</a></div>
+        </nav>
     </header>
 
     <main class="container">
-      <div class="check-out">
-        <h1>Check Out</h1>
-
-        <h4>Order Overview</h4>
-      </div>
-      <div class="order-content">
-        <section id="order-information">
-           
-               <div class="order-information-content">
-
-                <section id="order-information">
-                  <!-- Cart items will be dynamically inserted here -->
-                  <div id="cart-items-container"></div>
-                </section>
-
-        </section>                  
-</div>
-    
-    
-      <section class="information">
-        <div class="contact-information-header">
-
-          <h4>Contact Information:</h4>
+        <div class="check-out">
+            <h1>Check Out</h1>
+            <h4>Order Overview</h4>
         </div>
-        <div class ="contact-information">
-        
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
-        
-            <label for="phonenumber">Phone number:</label>
-            <input type="text" id="phonenumber" name="phonenumber" placeholder="Your phone number..">
-        
+        <div class="order-content">
+            <section id="order-information">
+                <div id="cart-items-container"></div>
+            </section>
         </div>
 
-        <div class="order-information-header">
-          <h4>Order Information:</h4>
-        </div>
-        <div class="order-information">
+        <section class="information">
+            <div class="contact-information-header">
+                <h4>Contact Information:</h4>
+            </div>
+            <div class="contact-information">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="phonenumber">Phone number:</label>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Your phone number..">
+            </div>
 
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" placeholder="Your first name..">
-      
-          <label for="lname">Phone number:</label>
-          <input type="text" id="lname" name="lname" placeholder="Your last name..">
-
-          <label for="adress">Adress:</label>
-          <input type="text" id="adress" name="adress" placeholder="Your adress..">
-        
-          <label for="postal-code">Postal-code:</label>
-          <input type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
-
-        </div>
-
-      </section>
+            <div class="order-information-header">
+                <h4>Order Information:</h4>
+            </div>
+            <div class="order-information">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name..">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                <label for="adress">Address:</label>
+                <input type="text" id="adress" name="adress" placeholder="Your address..">
+                <label for="postal-code">Postal code:</label>
+                <input type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
+            </div>
+        </section>
     </main>
-   
-  </body>
+</body>
 </html>

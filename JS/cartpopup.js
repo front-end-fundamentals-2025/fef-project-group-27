@@ -26,13 +26,42 @@ function toggleSizePopupInCart(index) {
 }
 
 function selectSizeInCart(size, index) {
-  cart[index].size = size; // Update the size in the cart
+  const item = cart[index];
+
+  // Check if the new size already has 4 items in the cart
+  const totalItemsWithNewSize = cart.reduce((total, cartItem) => {
+    if (cartItem.name === item.name && cartItem.size === size) {
+      return total + cartItem.quantity;
+    }
+    return total;
+  }, 0);
+
+  if (totalItemsWithNewSize + item.quantity > 4) {
+    alert("You cannot add more than 4 items of the same size.");
+    return; // Stop the size change
+  }
+
+  // Check if an item with the same name and new size already exists
+  const existingItemIndex = cart.findIndex(
+    (cartItem, i) =>
+      i !== index && // Ensure we're not comparing the item to itself
+      cartItem.name === item.name &&
+      cartItem.size === size
+  );
+
+  if (existingItemIndex !== -1) {
+    // If an item with the same name and size exists, merge the quantities
+    cart[existingItemIndex].quantity += item.quantity;
+    cart.splice(index, 1); // Remove the original item
+  } else {
+    // Otherwise, just update the size of the item
+    item.size = size;
+  }
+
   saveCartToLocalStorage();
   updateCartPopup();
   toggleSizePopupInCart(index); // Close the size popup
 }
-
-// quantity
 
 function toggleQuantityPopupInCart(index) {
   const quantityPopup = document.getElementById(`quantityPopupInCart${index}`);
@@ -44,6 +73,21 @@ function toggleQuantityPopupInCart(index) {
 }
 
 function selectQuantityInCart(quantity, index) {
+  const item = cart[index];
+
+  // Check if the new quantity exceeds the limit for the item's size
+  const totalItemsWithSameSize = cart.reduce((total, cartItem) => {
+    if (cartItem.name === item.name && cartItem.size === item.size) {
+      return total + cartItem.quantity;
+    }
+    return total;
+  }, 0);
+
+  if (totalItemsWithSameSize - item.quantity + quantity > 4) {
+    alert("You cannot add more than 4 items of the same size.");
+    return; // Stop the quantity change
+  }
+
   cart[index].quantity = quantity; // Update the quantity in the cart
   saveCartToLocalStorage();
   updateCartPopup();
@@ -61,6 +105,7 @@ function toggleCart() {
     updateCartPopup();
   }
 }
+
 function addToCart(product) {
   if (!selectedSize) {
     alert("Please select a size before adding to cart.");
@@ -69,6 +114,19 @@ function addToCart(product) {
 
   const productData = JSON.parse(product.getAttribute("data-product"));
   productData.size = selectedSize; // Add the selected size
+
+  // Check if the new size already has 4 items in the cart
+  const totalItemsWithNewSize = cart.reduce((total, cartItem) => {
+    if (cartItem.name === productData.name && cartItem.size === productData.size) {
+      return total + cartItem.quantity;
+    }
+    return total;
+  }, 0);
+
+  if (totalItemsWithNewSize + 1 > 4) {
+    alert("You cannot add more than 4 items of the same size.");
+    return; // Stop adding to cart
+  }
 
   // Check if the item with the same size already exists in the cart
   const existingItemIndex = cart.findIndex(
@@ -92,7 +150,7 @@ function addToCart(product) {
   // Reset the size selection
   selectedSize = null;
   const sizePickButton = document.querySelector(".size-pick > span");
-  sizePickButton.textContent = "Choose size "; // Reset the button text
+  sizePickButton.textContent = "Choose size"; // Reset the button text
 }
 
 function updateCartCount() {
@@ -107,6 +165,7 @@ function animateCartIcon() {
     cartIcon.classList.remove("bounce");
   }, 500);
 }
+
 function updateCartPopup() {
   const cartItems = document.querySelector(".cart-items");
   cartItems.innerHTML = "";
@@ -187,7 +246,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
   updateCartPopup();
 });
-
 
 window.addEventListener("cartUpdated", () => {
   updateCartPopup(); // Refresh the cart popup when the cart is updated
