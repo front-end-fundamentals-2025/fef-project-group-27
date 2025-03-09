@@ -23,8 +23,8 @@
   gap: 1rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  margin-left: 10rem;
-  margin-right:10rem;
+  margin-left: 2rem;
+  margin-right:2rem;
   
 }
 
@@ -36,7 +36,7 @@
 
 .img-content > img {
   max-width: 100%;
-  border: 1px solid grey;
+  border: 1px solid rgb(0, 0, 0);
   object-fit: cover;
 }
 
@@ -47,7 +47,7 @@
 .img-details {
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 0.3rem;
 }
 
 #websitename {
@@ -56,9 +56,9 @@
 
 #clothingname {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #price {
-  font-size: 15px;
+  font-size: 13px;
 }
