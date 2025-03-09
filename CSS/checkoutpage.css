@@ -165,6 +165,7 @@ hr {
 background-color: rgb(143, 140, 140);
 height: 100vh;
 border-radius: 5px;
+margin-top: 4rem;
 }
 
 .contact-information, .order-information {
@@ -241,4 +242,25 @@ border-radius: 5px;
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+
+.to-payment {
+  
+  background: black;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 3rem;
+}
+.purchase {
+  
+  background: black;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 100%;
 }
