@@ -6,7 +6,7 @@ nav {
   height: fit-content;
   position: relative;
   background-color: black;
-  padding: 2.5rem;
+  padding: 1rem;
 }
 
 .form button {
@@ -17,7 +17,7 @@ nav {
 /* styling of whole input container */
 .form {
   --timing: 0.3s;
-  --width-of-input: 200px;
+  --width-of-input: 400px;
   --height-of-input: 40px;
   --border-height: 2px;
   --input-bg: #fff;
@@ -132,6 +132,10 @@ nav > .menu > a {
   cursor: pointer;
 }
 
+.user, .globe , .button-cart-icon {
+  font-size: medium;
+}
+
 /* dropdown menu */
 
 /* Style for the dropdown container */
@@ -229,7 +233,7 @@ nav > .menu > a {
   padding-right: 1rem;
 }
 
-.button-dropdown-content-list {
+.button-dropdown-content-list { 
   list-style: none;
 }
 
