@@ -3,6 +3,7 @@
   height: fit-content;
   color: white;
 }
+
 .header-content {
   padding: 1rem;
 }
@@ -24,8 +25,7 @@
   margin-top: 4rem;
   margin-bottom: 4rem;
   margin-left: 2rem;
-  margin-right:2rem;
-  
+  margin-right: 2rem;
 }
 
 .img-content {
@@ -35,9 +35,10 @@
 }
 
 .img-content > img {
-  max-width: 100%;
-  border: 1px solid rgb(0, 0, 0);
-  object-fit: cover;
+  width: 30vw; /* Set a fixed width */
+  height: auto; /* Set a fixed height */
+  /* border: 1px solid rgb(0, 0, 0); */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .img-content:first-child {
@@ -56,9 +57,36 @@
 
 #clothingname {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #price {
-  font-size: 13px;
+  font-size: 15px;
+}
+
+
+.load-more-container {
+  text-align: center; 
+  margin-top: 2rem; 
+  margin-bottom: 4rem; 
+}
+
+.load-more-container p {
+  font-size: 14px; 
+  color: #555; 
+  margin-bottom: 0.5rem; 
+}
+
+.load-more-button {
+  background-color: black; 
+  color: white; 
+  border: none; 
+  padding: 0.75rem 2rem; 
+  font-size: 14px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #333; 
 }

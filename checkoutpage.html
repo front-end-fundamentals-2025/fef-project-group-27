@@ -1,78 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
     <link rel="stylesheet" href="CSS/generalCSS.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/checkoutpage.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="JS/checkout.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="arrow-back">
-                <a href="index.html">
-                    <i class="fa-solid fa-arrow-left" style="padding-right: 5px"></i>
-                    Continue Shopping
-                </a>
-            </div>
-            <div class="logo"><a href="index.html">logo</a></div>
-        </nav>
+      <nav>
+        <div class="arrow-back">
+          <a href="index.html">
+            <i class="fa-solid fa-arrow-left" style="padding-right: 5px"></i>
+            Continue Shopping
+          </a>
+        </div>
+        <div class="logo"><a href="index.html">logo</a></div>
+      </nav>
     </header>
 
     <main class="container">
-        <div class="check-out">
-            <h1>Check Out</h1>
-            <h4>Order Overview</h4>
-        </div>
-        <div class="order-content">
-            <section id="order-information">
-                <div id="cart-items-container"></div>
-            </section>
-        </div>
-
-        <section class="information">
-            <div class="contact-information-header">
-                <h4>Contact Information:</h4>
-            </div>
-            <div class="contact-information">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
-                <label for="phonenumber">Phone number:</label>
-                <input type="text" id="phonenumber" name="phonenumber" placeholder="Your phone number..">
-            </div>
-
-            <div class="order-information-header">
-                <h4>Order Information:</h4>
-            </div> 
-            <div class="order-information">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" placeholder="Your first name..">
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" placeholder="Your last name..">
-                <label for="adress">Address:</label>
-                <input type="text" id="adress" name="adress" placeholder="Your address..">
-                <label for="postal-code">Postal code:</label>
-                <input type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
-
-
-                <button class="to-payment" onclick="toPayment()">To Payment</button>
-                <hr>
-                <div class="amount-to-pay">
-                  amount to pay 
-                </div>
-                
-                <button class="purchase" onclick="purchase()">Confirm Purchase</button>
-
-            </div>
-
-
+      <div class="check-out">
+        <h1>Check Out</h1>
+      </div>
+      <div class="order-content">
+        <h1>Order Overview</h1>
+        <section id="order-information">
+          <div id="cart-items-container"></div>
         </section>
+      </div>
+
+      <section class="information">
+        <div class="checkout-container">
+          <h1>DELIVERY ADDRESS</h1>
+          <form id="checkout-form" class="checkout-form">
+            <!-- Delivery Address -->
+            <div class="form-section">
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="First Name*"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Last Name*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="street-address"
+                  name="street-address"
+                  placeholder="Street Address*"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="postal-code"
+                    name="postal-code"
+                    placeholder="Postal Code*"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="City*"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-section">
+              <h2>CONTACT INFORMATION</h2>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email*"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder="Phone Number*"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-section">
+              <button type="submit" class="submit-btn">Confirm Purchase</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

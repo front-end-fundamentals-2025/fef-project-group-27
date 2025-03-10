@@ -9,10 +9,6 @@ nav {
   padding: 2.5rem;
 }
 
-
-
-
-
 .form button {
   border: none;
   background: none;
@@ -278,7 +274,7 @@ hr {
   width: 100%;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -314,12 +310,12 @@ hr {
     gap: 10px;
   }
 
-  .logo-form{
+  .logo-form {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .logo-form > .logo > a > img{
+  .logo-form > .logo > a > img {
     margin-right: 0;
     width: 100px;
   }
@@ -327,7 +323,6 @@ hr {
   .logo-form > .form {
     height: 20px;
   }
-
 
   /* Hide globe text on mobile */
   .globe span {
@@ -366,12 +361,12 @@ hr {
     gap: 10px;
   }
 
-  .logo-form{
+  .logo-form {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .logo-form > .logo > a > img{
+  .logo-form > .logo > a > img {
     margin-right: 0;
     width: 100px;
   }
@@ -409,12 +404,12 @@ hr {
     margin-top: 1rem;
   }
 
-  .logo-form{
+  .logo-form {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .logo-form > .logo > a > img{
+  .logo-form > .logo > a > img {
     margin-right: 0;
     width: 100px;
   }
@@ -458,18 +453,16 @@ hr {
     margin-right: 0;
   }
 
- 
-
   nav > .logo > a > img {
     width: 30%;
     margin-top: 1.25rem;
   }
 
-  .logo-form{
+  .logo-form {
     display: flex;
   }
 
-  .logo-form > .logo > a > img{
+  .logo-form > .logo > a > img {
     margin-right: 0;
     width: 100px;
   }
