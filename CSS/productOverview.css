@@ -71,7 +71,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  width: 500px;
+  width: 100%;
   background-color: white;
   border: 1px solid #ddd;
   z-index: 1000; /* Ensure it's above other elements */
@@ -1372,7 +1372,6 @@
   .dropdown-container {
     display: flex;
     background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
   .dropdown-container.active {

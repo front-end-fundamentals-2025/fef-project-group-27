@@ -34,6 +34,250 @@
 
   </head>
   <body>
+
+<!--NAVIGATION-->
+<header>
+  <nav>
+    <button class="hamburger">☰</button>
+
+    <div class="logo">
+      <img src="IMG/website logo 2.png" alt="logo" />
+    </div>
+
+    <form class="form">
+      <button>
+        <i class="fa-solid fa-search"></i>
+      </button>
+      <input class="input" placeholder="Search" type="text" />
+    </form>
+
+    <div class="menu">
+      <button class="globe">
+        <i class="fa-solid fa-globe" style="padding-right: 5px"></i
+        ><span>en</span>
+      </button>
+      <button class="user">
+        <i class="fa-solid fa-user" style="padding-right: 5px"></i
+        ><span>login</span>
+      </button>
+
+      <button class="button-cart-icon" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </button>
+
+      <div class="cart-popup" id="cartPopup">
+        <div class="cart-popup-header">
+          <h3>Your Cart</h3>
+        </div>
+        <hr />
+        <div class="cart-items"></div>
+        <section class="cart-section">
+          <div class="cart-checkout-button">
+            <button onclick="toggleCart()" class="close-button">
+              &times;
+            </button>
+            <a href="checkoutpage.html" class="checkout-button">
+              Checkout<i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dropdown menu-->
+
+  <div class="dropdown-container">
+    <div class="button-content">
+      <button class="button-link">All Clothes</button
+      ><i
+        class="fa-solid fa-caret-down"
+        style="
+          padding-left: 5px;
+          border-right: 1px solid black;
+          padding-right: 1rem;
+        "
+      ></i>
+      <div class="button-dropdown-content">
+        <div class="button-dropdown-title">
+          <button class="back-button">&larr; Back</button>
+        </div>
+        <div class="button-dropdown-content-section-container">
+          <div class="button-dropdown-content-section">
+            <ul class="button-dropdown-content-list" id="type1">
+              <hr />
+              <li>
+                <a href="productsPage.html" id="productpage">Jeans</a>
+              </li>
+              <hr />
+              <li>Tops</li>
+              <hr />
+              <li>Shoes</li>
+              <hr />
+              <li>shirts</li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second button -->
+    <div class="button-content">
+      <button class="button-link">Jeans</button
+      ><i
+        class="fa-solid fa-caret-down"
+        style="
+          padding-left: 5px;
+          border-right: 1px solid black;
+          padding-right: 1rem;
+        "
+      ></i>
+      <div class="button-dropdown-content">
+        <div class="button-dropdown-title">
+          <button class="back-button">&larr; Back</button>
+        </div>
+        <div class="button-dropdown-content-section-container">
+          <div class="button-dropdown-content-section">
+            <ul class="button-dropdown-content-list" id="type1">
+              <hr />
+              <li>
+                <a href="pr" id="#">slim fit jeans</a>
+              </li>
+              <hr />
+              <li>straight fit jeans</li>
+              <hr />
+              <li>regular fit jeans</li>
+              <hr />
+              <li>flare jeans</li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- next button -->
+    <div class="button-content">
+      <button class="button-link">Tops</button
+      ><i
+        class="fa-solid fa-caret-down"
+        style="
+          padding-left: 5px;
+          border-right: 1px solid black;
+          padding-right: 1rem;
+        "
+      ></i>
+      <div class="button-dropdown-content">
+        <div class="button-dropdown-title">
+          <button class="back-button">&larr; Back</button>
+        </div>
+        <div class="button-dropdown-content-section-container">
+          <div class="button-dropdown-content-section">
+            <ul class="button-dropdown-content-list" id="type1">
+              <hr />
+              <li>
+                <a href="#">Cape Top</a>
+              </li>
+              <hr />
+              <li>Off Shoulder Top</li>
+              <hr />
+              <li>Tube Top</li>
+              <hr />
+              <li>One Shoulder Top</li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- next button -->
+
+    <div class="button-content">
+      <button class="button-link">Shoes</button
+      ><i
+        class="fa-solid fa-caret-down"
+        style="
+          padding-left: 5px;
+          border-right: 1px solid black;
+          padding-right: 1rem;
+        "
+      ></i>
+      <div class="button-dropdown-content">
+        <div class="button-dropdown-title">
+          <button class="back-button">&larr; Back</button>
+        </div>
+        <div class="button-dropdown-content-section-container">
+          <div class="button-dropdown-content-section">
+            <ul class="button-dropdown-content-list" id="type1">
+              <hr />
+              <li>
+                <a href="#">Clarks</a>
+              </li>
+              <hr />
+              <li>Sneakers</li>
+              <hr />
+              <li>Flats</li>
+              <hr />
+              <li>Heels</li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- next button -->
+
+    <div class="button-content">
+      <button class="button-link">Accesories</button
+      ><i
+        class="fa-solid fa-caret-down"
+        style="
+          padding-left: 5px;
+          border-right: 1px solid black;
+          padding-right: 1rem;
+        "
+      ></i>
+      <div class="button-dropdown-content">
+        <div class="button-dropdown-title">
+          <button class="back-button">&larr; Back</button>
+        </div>
+        <div class="button-dropdown-content-section-container">
+          <div class="button-dropdown-content-section">
+            <ul class="button-dropdown-content-list" id="type1">
+              <hr />
+              <li>
+                <a href="#">Handbags</a>
+              </li>
+              <hr />
+              <li>Scarfs</li>
+              <hr />
+              <li>hair Accesories</li>
+              <hr />
+              <li>jewelry</li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- next button -->
+
+    <div class="hamburger-menu">
+      <!-- login in button -->
+      <div class="login-button">
+        <i class="fa-solid fa-user" style="padding-right: 5px"></i>login
+      </div>
+
+      <!-- customer service -->
+      <div class="customer-service">
+        <i class="fa-solid fa-headset" style="padding-right: 5px"></i
+        >Customer Service
+      </div>
+    </div>
+  </div>
+</header>
+
+
     <main class="container">
       <div class="main-header"> 
         <div class="header-content">
