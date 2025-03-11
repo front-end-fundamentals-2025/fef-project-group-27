@@ -193,6 +193,7 @@
   .best-seller-items {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    margin: 0 1rem;
   }
 
   .hamburger {
@@ -336,6 +337,10 @@
 
   #type1 {
     margin: 0;
+  }
+
+  .arrow-button{
+    display: none;
   }
 }
 
@@ -492,6 +497,9 @@
   #type1 {
     margin: 0;
   }
+  .arrow-button{
+    display: none;
+  }
 }
 
 /* min 377px and max 426px */
@@ -646,6 +654,9 @@
 
   #type1 {
     margin: 0;
+  }
+  .arrow-button{
+    display: none;
   }
 }
 
@@ -802,6 +813,10 @@
   #type1 {
     margin: 0;
   }
+
+  .arrow-button{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -957,6 +972,10 @@
 
   #type1 {
     margin: 0;
+  }
+
+  .arrow-button{
+    display: none;
   }
 }
 

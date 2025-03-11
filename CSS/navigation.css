@@ -14,6 +14,7 @@ nav {
   background: none;
   color: #8b8ba7;
 }
+
 /* styling of whole input container */
 .form {
   --timing: 0.3s;
@@ -37,6 +38,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
 }
+
 /* styling of Input */
 .input {
   font-size: 0.9rem;
@@ -47,6 +49,7 @@ nav {
   padding-block: 0.7em;
   border: none;
 }
+
 /* styling of animated border */
 .form:before {
   content: "";
@@ -61,6 +64,7 @@ nav {
   border-radius: 1px;
   transition: transform var(--timing) ease;
 }
+
 /* Hover on Input */
 .form:focus-within {
   border-radius: var(--after-border-radius);
@@ -69,18 +73,20 @@ nav {
 input:focus {
   outline: none;
 }
+
 /* here is code of animated border */
 .form:focus-within:before {
   transform: scale(1);
 }
+
 /* styling of close button */
-/* == you can click the close button to remove text == */
 .reset {
   border: none;
   background: none;
   opacity: 0;
   visibility: hidden;
 }
+
 /* close button shown when typing */
 input:not(:placeholder-shown) ~ .reset {
   opacity: 1;
@@ -113,7 +119,6 @@ nav > .menu {
   align-items: center;
 }
 
-
 nav > .menu > a {
   text-decoration: none;
   color: white;
@@ -134,12 +139,15 @@ nav > .menu > a {
   margin-right: 2rem;
 }
 
-.user,.globe > span {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+.user,
+.globe > span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.user, .globe , .button-cart-icon {
+.user,
+.globe,
+.button-cart-icon {
   font-size: medium;
 }
 
@@ -239,7 +247,7 @@ nav > .menu > a {
   padding-right: 1rem;
 }
 
-.button-dropdown-content-list { 
+.button-dropdown-content-list {
   list-style: none;
 }
 
@@ -292,6 +300,16 @@ hr {
   width: 100%;
 }
 
+/* Search button and logo scaling */
+.form button i {
+  font-size: 1.2rem;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
 @media screen and (max-width: 320px) {
   nav {
     flex-wrap: nowrap;
@@ -334,13 +352,24 @@ hr {
     height: 20px;
   }
 
-  /* Hide globe text on mobile */
+  .user,
   .globe span {
     display: none;
   }
 
-  .user span {
-    display: none;
+  .form button i {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .form {
+    --width-of-input: 40px;
+    --height-of-input: 15px;
+    margin-left: 45px;
+    background: none;
   }
 }
 
@@ -385,13 +414,24 @@ hr {
     height: 20px;
   }
 
-  /* Hide globe text on mobile */
+  .user,
   .globe span {
     display: none;
   }
 
-  .user span {
-    display: none;
+  .form button i {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .form {
+    --width-of-input: 40px;
+    --height-of-input: 15px;
+    margin-left: 75px;
+    background: none;
   }
 }
 
@@ -428,28 +468,40 @@ hr {
     height: 20px;
   }
 
-  .globe {
-    display: flex;
-  }
-
-  .user {
-    display: flex;
-  }
-
-  .button-cart-icon {
-    display: flex;
-  }
-
-  .menu {
+  /* .menu {
     position: static;
     transform: none;
     order: 1;
     margin-left: auto;
     gap: 10px;
+  } */
+
+  .button-cart-icon {
+    margin-right: 1rem;
+  }
+
+  .user,
+  .globe span {
+    display: none;
+  }
+
+  .form button i {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .form {
+    --width-of-input: 110px;
+    --height-of-input: 30px;
+    /* margin-left: 100px;
+    background: none; */
   }
 }
 
-@media screen and (min-width: 427px) and (max-width: 600px) {
+@media screen and (min-width: 426px) and (max-width: 600px) {
   nav {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -481,16 +533,28 @@ hr {
     height: 20px;
   }
 
-  .globe {
-    display: flex;
-  }
-
-  .user {
-    display: flex;
-  }
-
   .button-cart-icon {
-    display: flex;
+    margin-right: 1rem;
+  }
+
+  .user,
+  .globe span {
+    display: none;
+  }
+
+  .form button i {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .form {
+    --width-of-input: 110px;
+    --height-of-input: 30px;
+    /* margin-left: 100px;
+    background: none; */
   }
 
   .menu {
@@ -532,6 +596,28 @@ hr {
   .button-cart-icon {
     display: flex;
   }
+  .button-cart-icon {
+    margin-right: 1rem;
+  }
+
+  /* .user,
+  .globe span {
+    display: none;
+  } */
+
+  .form button i {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .form {
+    --width-of-input: 150px;
+    --height-of-input: 30px;
+     
+  }
 
   .menu {
     position: static;
@@ -542,7 +628,52 @@ hr {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width:769px ) and (max-width:912px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  nav > .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  nav > .logo > a > img {
+    width: 30%;
+    margin-top: 3%;
+  }
+
+  .form button i {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .form {
+    --width-of-input: 260px;
+    --height-of-input: 30px;
+     
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    order: 1;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 913px)  {
   nav {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -578,5 +709,9 @@ hr {
     order: 1;
     margin-left: auto;
     gap: 10px;
+  }
+
+  .logo img {
+    width: 200px;
   }
 }
