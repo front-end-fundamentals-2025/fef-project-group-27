@@ -4,9 +4,10 @@
 nav {
   background-color: black;
   display: flex;
+  height: fit-content;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
   color: white;
   position: relative;
 }
@@ -159,7 +160,7 @@ hr {
   width: 100%;
 }
 
-h1, h2, h4 {
+h1, h2 {
   text-align: left;
   margin-bottom: 20px;
   color: #333;
