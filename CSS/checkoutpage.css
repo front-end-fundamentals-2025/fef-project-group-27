@@ -1,13 +1,10 @@
-/* ONLY CHECKOUT PAGE CSS */
-
-/* Nav CSS */
 nav {
   background-color: black;
   display: flex;
   height: fit-content;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem;
+  padding: 1rem;
   color: white;
   position: relative;
 }
@@ -22,9 +19,10 @@ nav > .arrow-back > a {
 }
 
 nav > .logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  /* Remove position: absolute and transform */
+  /* position: absolute; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 }
 
 nav > .logo > a {
@@ -32,11 +30,9 @@ nav > .logo > a {
   color: white;
 }
 
-
-
-body,.container {
-  background-color: #ECECEC;
-
+body,
+.container {
+  background-color: #ececec;
 }
 
 /* Main CSS */
@@ -122,7 +118,7 @@ body,.container {
   align-items: center;
   gap: 7rem;
   flex-direction: column;
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .remove-item {
@@ -147,10 +143,8 @@ hr {
 }
 
 .information {
- 
   margin-top: 3rem;
 }
-
 
 .checkout-container {
   background-color: #ffffff;
@@ -160,7 +154,8 @@ hr {
   width: 100%;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: left;
   margin-bottom: 20px;
   color: #000000;
@@ -225,4 +220,25 @@ h1, h2 {
   align-items: center;
   gap: 10px;
   color: #fc0707;
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav > .arrow-back {
+    width: fit-content;
+    font-size: 0.7rem;
+    order: 1; /* Move "Continue Shopping" to the left */
+  }
+
+  nav > .logo {
+    order: 2; /* Move logo to the right */
+    margin-left: 0; /* Remove any previous margin */
+  }
+
+  .logo img {
+    width: 80px;
+  }
 }

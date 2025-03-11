@@ -1,14 +1,5 @@
 /* ONLY NAVIGATION CSS */
 
-nav {
-  display: flex;
-  align-items: center;
-  height: fit-content;
-  position: relative;
-  background-color: black;
-  padding: 1rem;
-}
-
 .form button {
   border: none;
   background: none;
@@ -111,6 +102,15 @@ input:not(:placeholder-shown) ~ .reset {
   cursor: pointer;
   padding: 5px;
   margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+  background-color: black;
+  padding: 1rem;
 }
 
 nav > .menu {
