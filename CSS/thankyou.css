@@ -5,3 +5,151 @@ h1 {
     font-size: 1.5rem;
     margin-top: 20px;
   }
+
+  @media screen and (max-width: 320px) {
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav > .arrow-back {
+      width: fit-content;
+      font-size: 0.7rem;
+      order: 1; /* Move "Continue Shopping" to the left */
+    }
+  
+    nav > .logo {
+      order: 2; /* Move logo to the right */
+      margin-left: 0; /* Remove any previous margin */
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  }
+  
+  @media screen and (min-width:321px) and (max-width: 376px) {
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav > .arrow-back {
+      width: fit-content;
+      font-size: 0.7rem;
+      order: 1; /* Move "Continue Shopping" to the left */
+    }
+  
+    nav > .logo {
+      order: 2; /* Move logo to the right */
+      margin-left: 0; /* Remove any previous margin */
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  }
+  
+  
+  @media screen and (min-width:377px) and (max-width:426px) {
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav > .arrow-back {
+      width: fit-content;
+      font-size: 0.7rem;
+      order: 1; /* Move "Continue Shopping" to the left */
+    }
+  
+    nav > .logo {
+      order: 2; /* Move logo to the right */
+      margin-left: 0; /* Remove any previous margin */
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  }
+  
+  @media screen and (min-width:427px) and (max-width:600px){
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav > .arrow-back {
+      width: fit-content;
+      font-size: 0.7rem;
+      order: 1; /* Move "Continue Shopping" to the left */
+    }
+  
+    nav > .logo {
+      order: 2; /* Move logo to the right */
+      margin-left: 0; /* Remove any previous margin */
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  }
+  
+  @media screen and (min-width:601px) and (max-width:768px) {
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav > .arrow-back {
+      width: fit-content;
+      font-size: 1rem;
+      order: 1; /* Move "Continue Shopping" to the left */
+    }
+  
+    nav > .logo {
+      order: 2; /* Move logo to the right */
+      margin-left: 0; /* Remove any previous margin */
+    }
+  
+    .logo img {
+      width: 150px;
+    }
+  }
+  
+  @media screen and (min-width:769px) and (max-width:912px){
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav > .arrow-back {
+      width: fit-content;
+      font-size: 1rem;
+      order: 1; /* Move "Continue Shopping" to the left */
+    }
+  
+    nav > .logo {
+      order: 2; /* Move logo to the right */
+      margin-left: 0; /* Remove any previous margin */
+    }
+  
+    .logo img {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (min-width:913px) {
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav > .arrow-back {
+      width: fit-content;
+      font-size: 1rem;
+      order: 1; /* Move "Continue Shopping" to the left */
+    }
+  
+    nav > .logo {
+      order: 2; /* Move logo to the right */
+      margin-left: 0; /* Remove any previous margin */
+    }
+  
+    .logo img {
+      width: 200px;
+    }
+  }
