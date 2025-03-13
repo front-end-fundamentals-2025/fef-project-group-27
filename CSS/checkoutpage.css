@@ -223,7 +223,6 @@ h2 {
 }
 
 
-
 @media screen and (max-width:425px) {
   .cart-popup{
     width: 100%;
@@ -249,6 +248,10 @@ h2 {
   .logo img {
     width: 80px;
   }
+
+  .order-content {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width:321px) and (max-width: 376px) {
@@ -269,6 +272,10 @@ h2 {
 
   .logo img {
     width: 80px;
+  }
+
+  .order-content {
+    width:100%;
   }
 }
 
@@ -291,6 +298,11 @@ h2 {
 
   .logo img {
     width: 80px;
+
+  }
+
+  .order-content {
+    width: 100%;
   }
 }
 
