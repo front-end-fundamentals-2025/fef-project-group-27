@@ -261,6 +261,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const totalAmount = calculateTotalAmount();
       localStorage.setItem("totalAmount", totalAmount);
 
+      const sizes = cart.map((item) => item.size);
+      localStorage.setItem("selectedSizes", JSON.stringify(sizes));
+
+      localStorage.setItem("customerEmail", email);
 
       // Redirect to the thank you page
       window.location.href = "thankyou.html";
