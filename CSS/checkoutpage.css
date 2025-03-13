@@ -325,6 +325,10 @@ h2 {
   .logo img {
     width: 80px;
   }
+
+  .order-content {
+  width: 100%;
+  }
 }
 
 @media screen and (min-width:601px) and (max-width:768px) {
@@ -345,6 +349,10 @@ h2 {
 
   .logo img {
     width: 150px;
+  }
+
+  .order-content {
+    width: 100%;
   }
 }
 
