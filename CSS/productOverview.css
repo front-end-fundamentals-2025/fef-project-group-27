@@ -1328,9 +1328,13 @@
   }
 }
 
+@media  and (min-width:1150px) and (max-width:) {
+  
+}
 
 
-@media screen and (min-width: 1025px) {
+
+@media screen and (min-width: 1400px) {
   .container {
     display: flex;
     flex-direction: row;
