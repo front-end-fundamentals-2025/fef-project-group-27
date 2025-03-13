@@ -44,6 +44,12 @@
   height: auto; /* Set a fixed height */
   /* border: 1px solid rgb(0, 0, 0); */
   object-fit: cover; /* Ensures the image covers the area without distortion */
+  transition: transform 0.3s ease;
+}
+
+.img-content > img:hover {
+transform: scale(1.1);
+box-shadow: 0 8px 16px rgb(0,0,0.2);
 }
 
 .img-content:first-child {
