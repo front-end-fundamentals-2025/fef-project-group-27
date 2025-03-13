@@ -222,6 +222,14 @@ h2 {
   color: #fc0707;
 }
 
+
+
+@media screen and (max-width:425px) {
+  .cart-popup{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   nav {
     justify-content: space-between;

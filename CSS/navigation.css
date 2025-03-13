@@ -310,6 +310,12 @@ hr {
   height: auto;
 }
 
+@media screen and (max-width:425px) {
+  .cart-popup{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   nav {
     flex-wrap: nowrap;

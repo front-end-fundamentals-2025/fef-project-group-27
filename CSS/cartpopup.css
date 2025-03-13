@@ -205,6 +205,12 @@
 
 /* cart popup responsiveness */
 
+@media screen and (max-width:425px) {
+  .cart-popup {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .cart-popup {
     width: 80%;

@@ -183,6 +183,13 @@
 
 /* responsiveness */
 
+
+@media screen and (max-width:425px) {
+  .cart-popup {
+    width: 100%;
+  }
+}
+
 /* max 320px */
 @media screen and (max-width: 320px) {
   .sliders-container {
@@ -291,7 +298,11 @@
     font-size: 18px;
     cursor: pointer;
     margin-bottom: 10px;
+
+    
   }
+
+  
 
   .secondary-popup-content {
     display: flex;
