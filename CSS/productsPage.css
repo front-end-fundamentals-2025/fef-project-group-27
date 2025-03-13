@@ -951,7 +951,137 @@
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width:900px) {
+  .image-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-content > img {
+    width: 45vw;
+    height: auto;
+    object-fit: cover;
+  }
+ 
+  .best-seller-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hamburger {
+    display: none;
+    order: -1;
+  }
+
+  .login-button {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .customer-service {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .dropdown-container {
+    display: flex;
+    background: white;
+  }
+
+  .dropdown-container.active {
+    display: block;
+  }
+
+  .button-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .button-link {
+    padding: 15px;
+    text-align: left;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button-dropdown-content {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: fit-content;
+    background: white;
+    transition: left 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .button-content.active .button-dropdown-content {
+    left: 0;
+    width: 100%;
+    top: 100%;
+    position: absolute;
+  }
+
+  .back-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .button-dropdown-content-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-dropdown-content-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .button-dropdown-content-list hr {
+    display: none;
+  }
+
+  .button-dropdown-content-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .button-dropdown-content-list li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  .fa-caret-down {
+    transition: transform 0.3s ease;
+  }
+
+  .button-content.active .fa-caret-down {
+    transform: rotate(180deg);
+  }
+
+  .button-dropdown-title {
+    margin: 0;
+  }
+
+  #type1 {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 901px)  {
+ 
   .best-seller-items {
     grid-template-columns: repeat(4, 1fr);
   }
