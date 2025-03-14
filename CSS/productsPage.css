@@ -264,6 +264,10 @@ box-shadow: 0 8px 16px rgb(0,0,0.2);
     cursor: pointer;
   }
 
+  .select {
+    width:100px;
+  }
+
   .fa-caret-down {
     transition: transform 0.3s ease;
   }
@@ -462,6 +466,8 @@ box-shadow: 0 8px 16px rgb(0,0,0.2);
     grid-template-columns: repeat(1,1fr);
 
   }
+
+  
 
   .img-content > img {
     width: 100%;
